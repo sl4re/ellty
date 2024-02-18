@@ -1,0 +1,118 @@
+.preview {
+    max-width: 1920px;
+    padding: 40px 32px 100px;
+
+    @media (max-width: 1440px) {
+        max-width: 1456;
+        padding: 40px 32px 80px;
+    }
+
+    @media (max-width: 1280px) {
+        max-width: 1296;
+        padding: 40px 12px 100px;
+    }
+
+    @media (max-width: 1024px) {
+        max-width: 1024;
+        padding: 40px 12px 100px;
+    }
+
+    @media (max-width: 768px) {
+        max-width: 768;
+        padding: 40px 16px 80px;
+    }
+
+    @media (max-width: 480px) {
+        max-width: 440;
+        padding: 40px 20px 64px;
+    }
+}
+
+.categories {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+    align-items: center;
+    text-align: center;
+
+    @media (max-width: 768px) {
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
+
+    &__link:link,
+    &__link:visited {
+        color: var(--color-text-main);
+        line-height: 20.8px;
+        border-radius: 4px;
+
+        display: block;
+        padding: 10px 18px;
+    }
+
+    &__link:hover {
+        background-color: var(--color-bg-first);
+    }
+}
+
+.preview {
+    &__slider {
+        position: relative;
+    }
+
+    &__slider-list {
+        display: flex;
+        gap: 15px;
+        overflow: hidden;
+    }
+
+    &__item {
+        width: 202px;
+
+        flex-shrink: 0;
+    }
+
+    &__bg {
+        background-color: var(--color-bg-first);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 147px;
+        margin-bottom: 10px;
+        border-radius: 4px;
+    }
+
+    &__heading {
+        font-size: 16px;
+        font-weight: 500;
+        line-height: normal;
+    }
+
+    &__arrow-btn {
+        width: 32px;
+        height: 32px;
+        background-color: #fff;
+        border: none;
+        border-radius: 100px;
+        border: 1px solid var(--color-bg-first);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    &__arrow-btn:hover {
+        background-color: var(--color-main);
+    }
+
+    &__arrow-btn--prev {
+        left: -16px;
+    }
+
+    &__arrow-btn--next {
+        right: -16px;
+    }
+}
