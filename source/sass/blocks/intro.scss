@@ -1,0 +1,130 @@
+.intro {
+    background-color: var(--color-bg-secondary);
+    padding: 18px 0;
+
+    @media (max-width: 1440px) {
+        padding: 39px 0;
+    }
+
+    @media (max-width: 1280px) {
+        padding: 57px 0;
+    }
+
+    @media (max-width: 1024px) {
+        padding: 80px 20px;
+    }
+
+    @media (max-width: 768px) {
+        padding: 32px 16px 40px 16px;
+    }
+
+    @media (max-width: 480px) {
+        padding: 32px 15px 40px 15px;
+    }
+
+    &-wrapper {
+        max-width: 1480px;
+        margin: 0 auto;
+        padding: 0 50px;
+
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        @media (max-width: 1440px) {
+            max-width: 1156px;
+            padding: 0;
+        }
+
+        @media (max-width: 1280px) {
+            max-width: 1010px;
+        }
+
+        @media (max-width: 1024px) {
+            max-width: 876px;
+        }
+
+        @media (max-width: 768px) {
+            max-width: 532px;
+            flex-direction: column;
+        }
+
+        @media (max-width: 480px) {
+            max-width: 450px;
+        }
+    }
+
+    &__content {
+        @media (max-width: 768px) {
+            order: 5;
+            text-align: center;
+        }
+    }
+
+    &__media {
+        display: flex;
+        justify-content: flex-end;
+
+        @media (max-width: 768px) {
+            order: 1;
+            justify-content: center;
+            margin-bottom: 18px;
+        }
+    }
+
+    &__title {
+        font-size: 36px;
+        font-weight: 500;
+        line-height: normal;
+        margin-bottom: 15px;
+        max-width: 490px;
+
+        @media (max-width: 1024px) {
+            font-size: 30px;
+        }
+    }
+
+    &__text {
+        line-height: 20.8px;
+        color: var(--color-text-secondary);
+        max-width: 460px;
+        margin-bottom: 30px;
+    }
+
+    &__link {
+        display: inline-block;
+        color: inherit;
+
+        @media (max-width: 768px) {
+            padding: 11px 43px;
+        }
+
+        @media (max-width: 480px) {
+            display: block;
+            padding-top: 14px;
+            padding-bottom: 14px;
+        }
+    }
+
+    &__img {
+        @media (max-width: 1440px) {
+            width: 520px;
+            height: 316px;
+        }
+
+        @media (max-width: 1280px) {
+            width: 460px;
+            height: 280px;
+        }
+
+        @media (max-width: 1024px) {
+            width: 345px;
+            height: 211px;
+        }
+
+        @media (max-width: 768px) {
+            width: 437px;
+            height: 268px;
+        }
+    }
+}

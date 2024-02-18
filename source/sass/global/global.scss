@@ -1,0 +1,55 @@
+body {
+    font-family: var(--font-family);
+    font-size: 16px;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 18.2px;
+    color: var(--color-text-main);
+
+    @media (max-width: 1440px) {
+        font-size: 14px;
+    }
+
+    @media (max-width: 480px) {
+        font-size: 16px;
+    }
+    // max-width: 1400px;
+    // margin: 0 auto;
+}
+
+.wrapper {
+    max-width: 1920px;
+    padding: 0 32px;
+    margin: 0 auto;
+}
+
+.btn {
+    background-color: transparent;
+    border: none;
+    padding: 11px 18px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+// Отключенное состояние кнопки\ссылки
+.link--disabled {
+    pointer-events: none;
+    opacity: 0.5;
+}
+
+.btn--primary {
+    padding: 11px 33px;
+    background-color: var(--color-main);
+
+    &:hover {
+        box-shadow: var(--shadow-btn);
+    }
+}
+
+.btn--secondary {
+    background-color: var(--color-bg-first);
+
+    &:hover {
+        background-color: var(--color-main);
+    }
+}
