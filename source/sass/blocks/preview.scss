@@ -3,27 +3,22 @@
     padding: 40px 32px 100px;
 
     @media (max-width: 1440px) {
-        max-width: 1456;
         padding: 40px 32px 80px;
     }
 
     @media (max-width: 1280px) {
-        max-width: 1296;
-        padding: 40px 12px 100px;
+        padding: 40px 16px 100px;
     }
 
     @media (max-width: 1024px) {
-        max-width: 1024;
-        padding: 40px 12px 100px;
+        padding: 40px 16px 100px;
     }
 
     @media (max-width: 768px) {
-        max-width: 768;
         padding: 40px 16px 80px;
     }
 
     @media (max-width: 480px) {
-        max-width: 440;
         padding: 40px 20px 64px;
     }
 }
@@ -63,8 +58,13 @@
     &__slider-list {
         display: flex;
         gap: 15px;
-        overflow: hidden;
+        // overflow: hidden;
+        overflow-x: auto;
     }
+
+    // &__slider-list::-webkit-scrollbar {
+    //     display: none;
+    // }
 
     &__item {
         width: 202px;
@@ -86,26 +86,6 @@
         font-size: 16px;
         font-weight: 500;
         line-height: normal;
-    }
-
-    &__arrow-btn {
-        width: 32px;
-        height: 32px;
-        background-color: #fff;
-        border: none;
-        border-radius: 100px;
-        border: 1px solid var(--color-bg-first);
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        cursor: pointer;
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
-    }
-
-    &__arrow-btn:hover {
-        background-color: var(--color-main);
     }
 
     &__arrow-btn--prev {
