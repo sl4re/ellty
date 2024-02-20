@@ -1,0 +1,22 @@
+.cta {
+    background-color: var(--color-bg-secondary);
+    padding: 80px 32px 90px;
+    text-align: center;
+
+    &-wrapper {
+        max-width: 900px;
+        margin: 0 auto;
+    }
+
+    &__title {
+        margin-bottom: 15px;
+    }
+
+    &__text {
+        margin-bottom: 40px;
+    }
+
+    &__link {
+        color: var(--color-text-main);
+    }
+}

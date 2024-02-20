@@ -8,6 +8,8 @@
     column-gap: 20px;
     row-gap: 80px;
 
+
+
     @media (max-width: 1440px) {
         // max-width: 1060px;
         padding: 0 48px 100px;
@@ -39,7 +41,7 @@
     }
 
     @media (max-width: 480px) {
-        max-width: 460px;
+        // max-width: 460px;
         padding: 0 10px 64px;
     }
 }
