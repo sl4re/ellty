@@ -1,6 +1,7 @@
 .templates {
     text-align: center;
     max-width: 1920px;
+    margin: 0 auto;
     padding: 0 32px 100px;
 
     @media (max-width: 1440px) {
@@ -37,20 +38,23 @@
         margin-bottom: 30px;
     }
 
-    &__slider {
+    &__slider-wrapper {
         position: relative;
-        margin-bottom: 30px;
     }
+
+    &__slider {
+        margin-bottom: 30px;
+        overflow-x: auto;
+    }
+
+    // &__slider::-webkit-scrollbar {
+    //     display: none;
+    // }
 
     &__list {
         display: flex;
         gap: 15px;
-        overflow-x: auto;
     }
-
-    // &__list::-webkit-scrollbar {
-    //     display: none;
-    // }
 
     &__list + &__list {
         margin-top: 15px;
