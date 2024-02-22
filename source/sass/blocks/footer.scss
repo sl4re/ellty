@@ -171,6 +171,13 @@
     position: relative;
     display: flex;
 
+    @media (max-width: 768px) {
+        font-size: 12px;
+        gap: 15px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
     &::before {
         content: "";
         position: absolute;
@@ -179,6 +186,11 @@
         top: 0;
         left: -32px;
         width: calc(100% + 64px);
+
+        @media (max-width: 768px) {
+            left: -20px;
+            width: calc(100% + 40px);
+        }
     }
 
     &__lang-list {
@@ -221,5 +233,9 @@
     &__copyright {
         margin-left: auto;
         color: var(--color-text-secondary);
+
+        @media (max-width: 768px) {
+            margin: 0;
+        }
     }
 }
