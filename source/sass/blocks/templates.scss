@@ -13,22 +13,25 @@
     }
 
     &__title {
-        position: relative;
         max-width: 550px;
         margin: 0 auto 15px;
     }
 
-    &__title::before {
+    &__title-decor {
+        position: relative;
+    }
+
+    &__title-decor::before {
         position: absolute;
-        top: -3px;
+        top: -2px;
         left: -1px;
         content: "";
         display: block;
-        width: 205px;
+        width: 193px;
         height: 48px;
         background-image: url("../img/decor.svg");
         background-repeat: no-repeat;
-        background-size: cover;
+        background-size: contain;
         z-index: 5;
     }
 
