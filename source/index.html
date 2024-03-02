@@ -561,6 +561,46 @@
         </div>
     </footer>
 
+    <div class="modal-container">
+        <div class="modal modal-login">
+            <button class="modal__close-btn">
+                <span></span>
+                <span></span>
+            </button>
+
+            <h2 class="modal__title">Log in</h2>
+            <form class="modal__form" action="#">
+                <label class="modal__label" for="email">Email</label>
+                <input class="modal__input" id="email" type="email" placeholder="Enter your email">
+
+                <label class="modal__label" for="password">Password</label>
+                <input class="modal__input" id="password" type="email" placeholder="**********">
+
+                <div class="modal__inner-wrapper">
+                    <label class="modal__checkbox-label" for="remember">
+                        <input class="modal__checkbox" id="remember" type="checkbox">Remember me
+                        <svg class="modal__checkbox-icon" width="14" height="14">
+                            <use xlink:href="img/sprites/sprite.svg#check"></use>
+                        </svg>
+                    </label>
+
+                    <a class="modal__forgot-link" href="#">Forgot password?</a>
+                </div>
+
+                <button class="modal__btn--main btn btn--primary" type="submit">Log in</button>
+            </form>
+
+            <p class="modal__divider"><span>or</span></p>
+
+            <a class="modal__btn btn modal-btn--secondary" href="#">Google</a>
+            <a class="modal__btn btn modal-btn--secondary" href="#">Facebook</a>
+            <a class="modal__btn btn modal-btn--secondary" href="#">Apple</a>
+
+            <p class="modal__alternative-option">Don't have an account? <a class="modal__alternative-link" href="#">Sign
+                    Up</a></p>
+        </div>
+    </div>
+
     <script src="js/script.min.js" type="module"></script>
 </body>
 
