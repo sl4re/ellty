@@ -1,0 +1,30 @@
+.breadcrumbs {
+    padding: 17px 0 15px 32px;
+
+    @media (max-width: 768px) {
+        padding-left: 15px;
+    }
+
+    &__list {
+        display: flex;
+    }
+
+    &__item + &__item {
+        padding-left: 25px;
+        background-image: url("../img/arrow-right.svg");
+        background-repeat: no-repeat;
+        background-size: 11px 13px;
+        background-position: 6px;
+    }
+
+    &__item:not(:last-child) {
+        opacity: 0.4;
+    }
+
+    &__link:link,
+    &__link:visited {
+        font-size: 14px;
+        line-height: 18.2px;
+        color: var(--color-text-secondary);
+    }
+}

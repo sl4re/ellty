@@ -1,0 +1,57 @@
+.policy {
+    &__page-title {
+        font-size: 36px;
+        font-weight: 400;
+        line-height: normal;
+        text-align: center;
+
+        background-color: var(--color-bg-secondary);
+        padding: 80px 32px;
+        margin-bottom: 40px;
+
+        @media (max-width: 1280px) {
+            font-size: 30px;
+        }
+
+        @media (max-width: 768px) {
+            padding: 50px 15px;
+        }
+    }
+
+    &__list {
+        max-width: 936px;
+        margin: 0 auto 80px;
+        padding: 0 32px;
+
+        @media (max-width: 1920px) {
+            max-width: 782px;
+        }
+
+        @media (max-width: 1024px) {
+            max-width: 768px;
+        }
+
+        @media (max-width: 768px) {
+            max-width: 480px;
+            padding: 0 20px;
+        }
+    }
+
+    &__item + &__item {
+        margin-top: 40px;
+    }
+
+    &__block-title {
+        font-size: 24px;
+        font-weight: 500;
+        line-height: normal;
+        margin-bottom: 15px;
+    }
+
+    &__block-text {
+        font-size: 16px;
+        line-height: 20.8px;
+        color: var (--color-text-secondary);
+        margin-bottom: 15px;
+    }
+}
