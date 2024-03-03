@@ -10,14 +10,29 @@ navToggle.addEventListener("click", function () {
 });
 
 // Окно Log in
+
 const navLoginBtn = document.querySelector(".user-nav__login");
-const modalWindow = document.querySelector(".modal-container");
-const modalCloseBtn = document.querySelector(".modal__close-btn");
+const modalLogin = document.querySelector(".modal-login");
+const loginCloseBtn = document.querySelector(".login--close");
 
 navLoginBtn.addEventListener("click", function () {
-    modalWindow.classList.toggle("modal--opened");
+    modalLogin.classList.toggle("modal--opened");
 });
 
-modalCloseBtn.addEventListener("click", function () {
-    modalWindow.classList.toggle("modal--opened");
+loginCloseBtn.addEventListener("click", function () {
+    modalLogin.classList.toggle("modal--opened");
+});
+
+// Окно Sign up
+
+const navSignUpBtn = document.querySelector(".user-nav__signUp");
+const modalSignUp = document.querySelector(".modal-signup");
+const signupCloseBtn = document.querySelector(".signup--close");
+
+navSignUpBtn.addEventListener("click", function () {
+    modalSignUp.classList.toggle("modal--opened");
+});
+
+signupCloseBtn.addEventListener("click", function () {
+    modalSignUp.classList.toggle("modal--opened");
 });
