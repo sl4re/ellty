@@ -40,6 +40,10 @@
         padding-bottom: 10px;
     }
 
+    &__logo-link {
+        justify-self: start;
+    }
+
     &__socials-list {
         grid-area: socials;
         display: flex;
