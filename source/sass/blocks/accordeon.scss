@@ -1,0 +1,65 @@
+.accordeon {
+    max-width: 960px;
+    margin: 0 auto 100px;
+
+    @media (max-width: 768px) {
+        margin-bottom: 54px;
+    }
+
+    &__item {
+        border: 1px solid var(--color-border);
+        padding: 16px 20px;
+    }
+
+    &__item + &__item {
+        margin-top: 15px;
+    }
+
+    &__title {
+        font-weight: 500;
+        line-height: normal;
+        display: block;
+        cursor: pointer;
+        position: relative;
+        padding-right: 15px;
+
+        &:hover {
+            font-weight: 700;
+        }
+    }
+
+    &__title::after {
+        content: "";
+        display: block;
+        position: absolute;
+        width: 16px;
+        height: 16px;
+        background-image: url("../img/acc_arrow-down.svg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+        top: 50%;
+        right: 0;
+        transform: translateY(-50%);
+    }
+
+    &__input {
+        appearance: none;
+        position: absolute;
+    }
+
+    &__input:checked ~ &__text {
+        display: block;
+    }
+
+    &__text {
+        display: none;
+        font-size: 14px;
+        color: var(--color-text-secondary);
+        margin-top: 9px;
+    }
+}
+
+.accordeon__item:has(.accordeon__input:checked) .accordeon__title::after {
+    background-image: url("../img/acc_arrow-up.svg");
+}
