@@ -100,6 +100,15 @@
             margin-bottom: 56px;
         }
     }
+
+    &__accordeon {
+        max-width: 960px;
+        margin: 0 auto 100px;
+
+        @media (max-width: 768px) {
+            margin-bottom: 54px;
+        }
+    }
 }
 
 .card {
