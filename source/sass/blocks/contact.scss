@@ -31,7 +31,6 @@
         }
     }
 
-    ///////////////////
     // Левая часть
     &__info {
         flex: 1;
@@ -51,24 +50,6 @@
         @media (max-width: 768px) {
             flex-direction: column;
             padding: 0;
-        }
-    }
-
-    &__info-description {
-        flex: 1;
-        // max-width: 315px;
-
-        @media (max-width: 1024px) {
-            max-width: 100%;
-        }
-    }
-
-    &__info-adress-info {
-        flex: 1;
-        // max-width: 315px;
-
-        @media (max-width: 1024px) {
-            max-width: 100%;
         }
     }
 
@@ -122,7 +103,22 @@
         background-size: 24px 24px;
     }
 
-    //////////////////
+    &__info-description {
+        flex: 1;
+
+        @media (max-width: 1024px) {
+            max-width: 100%;
+        }
+    }
+
+    &__info-adress-info {
+        flex: 1;
+
+        @media (max-width: 1024px) {
+            max-width: 100%;
+        }
+    }
+
     // Правая часть
     &__faq {
         flex: 1;

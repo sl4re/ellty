@@ -1,0 +1,54 @@
+.design-content {
+    width: 100%;
+    max-width: 1920px;
+    margin: 0 auto;
+    padding: 0 32px;
+
+    &__inner {
+        display: grid;
+        grid-template-areas:
+            "filters search "
+            "filters tags"
+            "filters breadcrumbs"
+            "filters templates"
+            "filters pagination";
+
+        grid-template-columns: min-content auto;
+
+        @media (max-width: 1024px) {
+            grid-template-areas:
+                "filters search "
+                "tags tags"
+                "breadcrumbs breadcrumbs"
+                "templates templates"
+                "pagination pagination";
+
+            grid-template-columns: auto auto;
+        }
+    }
+}
+
+// ПОИСК
+.design-search {
+    grid-area: search;
+}
+
+// ТЕГИ
+.design-tags {
+    grid-area: tags;
+}
+
+// BREADCRUMBS
+.design-breadcrumbs {
+    grid-area: breadcrumbs;
+}
+
+// КАРТОЧКИ
+.design-template {
+    grid-area: templates;
+}
+
+// ПАГИНАЦИЯ
+.design-pagination {
+    grid-area: pagination;
+}
