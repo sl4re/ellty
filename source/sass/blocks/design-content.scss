@@ -25,6 +25,18 @@
 
             grid-template-columns: auto auto;
         }
+
+        @media (max-width: 768px) {
+            grid-template-areas:
+                "search "
+                "tags"
+                "breadcrumbs"
+                "filters"
+                "templates"
+                "pagination";
+
+            grid-template-columns: auto;
+        }
     }
 }
 
