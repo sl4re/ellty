@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
@@ -69,7 +69,7 @@
 
         <section class="design-content">
             <div class="design-content__inner">
-                <h2 class="visually-hidden">Настройки подбора дизайна</h2>
+                <h2 class="visually-hidden">Design selection settings</h2>
                 <form class="design-form" action="#">
                     <button class="design-form__filters">Filters</button>
 
@@ -83,16 +83,80 @@
                     <button class="design-form__clear">Clear all <span>(1)</span></button>
                 </form>
 
-                <input class="design-search" type="text">
+                <input class="design-search" type="search" placeholder="Search">
 
                 <div class="design-tags">
-                    <a class="design-tags__link" href="#">new year</a>
-                    <a class="design-tags__link" href="#">christmas</a>
-                    <a class="design-tags__link" href="#">2024</a>
-                    <a class="design-tags__link" href="#">business</a>
-                    <a class="design-tags__link" href="#">mockup</a>
-                    <a class="design-tags__link" href="#">2023</a>
+                    <ul class="design-tags__list">
+                        <li class="design-tags__item">
+                            <button class="design-tags__tag" type="button">new year</button>
+                        </li>
+                        <li class="design-tags__item">
+                            <button class="design-tags__tag" type="button">happiness</button>
+                        </li>
+                        <li class="design-tags__item">
+                            <button class="design-tags__tag" type="button">happiness</button>
+                        </li>
+                        <li class="design-tags__item">
+                            <button class="design-tags__tag" type="button">happiness</button>
+                        </li>
+                        <li class="design-tags__item">
+                            <button class="design-tags__tag" type="button">happiness</button>
+                        </li>
+                        <li class="design-tags__item">
+                            <button class="design-tags__tag" type="button">happiness</button>
+                        </li>
+                        <li class="design-tags__item">
+                            <button class="design-tags__tag" type="button">happiness</button>
+                        </li>
+                        <li class="design-tags__item">
+                            <button class="design-tags__tag" type="button">happiness</button>
+                        </li>
+                        <li class="design-tags__item">
+                            <button class="design-tags__tag" type="button">happiness</button>
+                        </li>
+                        <li class="design-tags__item">
+                            <button class="design-tags__tag" type="button">happiness</button>
+                        </li>
+                        <li class="design-tags__item">
+                            <button class="design-tags__tag" type="button">happiness</button>
+                        </li>
+                        <li class="design-tags__item">
+                            <button class="design-tags__tag" type="button">happiness</button>
+                        </li>
+                        <li class="design-tags__item">
+                            <button class="design-tags__tag" type="button">happiness</button>
+                        </li>
+                        <li class="design-tags__item">
+                            <button class="design-tags__tag" type="button">happiness</button>
+                        </li>
+                        <li class="design-tags__item">
+                            <button class="design-tags__tag" type="button">happiness</button>
+                        </li>
+                        <li class="design-tags__item">
+                            <button class="design-tags__tag" type="button">happiness</button>
+                        </li>
+                        <li class="design-tags__item">
+                            <button class="design-tags__tag" type="button">happiness</button>
+                        </li>
+                        <li class="design-tags__item">
+                            <button class="design-tags__tag" type="button">happiness</button>
+                        </li>
+                    </ul>
+
+
+                    <button class="arrow-btn design-tags__arrow-btn design-tags__arrow-btn--prev" type="button">
+                        <span class="visually-hidden">Назад</span>
+                        <svg class="arrow-icon" width="20" height="20">
+                            <use xlink:href="img/sprites/sprite.svg#arrow-left"></use>
+                        </svg>
+                    </button>
+                    <button class="arrow-btn design-tags__arrow-btn design-tags__arrow-btn--next" type="button">
+                        <span class="visually-hidden">Вперед</span>
+                        <svg class="arrow-icon" width="20" height="20">
+                            <use xlink:href="img/sprites/sprite.svg#arrow-right"></use>
+                        </svg></button>
                 </div>
+
 
                 <div class="breadcrumbs design-breadcrumbs">
                     <ul class="breadcrumbs__list">
@@ -118,23 +182,445 @@
 
                     <li class="design-template">
                         <a class="design-template__link" href="#">
-                            <img class="design-template__img" src="img/design_1.png" srcset="img/design_1.png@2x 2x"
-                                alt="Дизайн_1" width="212" height="216">
+                            <picture>
+                                <source type="image/webp" srcset="img/design_1.webp 1x, img/design_1@2x.webp 2x">
+                                <img class="design-template__img" src="img/design_1.jpg" srcset="img/design_1.jpg@2x 2x"
+                                    alt="Design_1" width="212" height="216">
+                            </picture>
                             <h3 class="design-template__title">Lorem ipsum dolor sit am...</h3>
                         </a>
                     </li>
+                    <li class="design-template">
+                        <a class="design-template__link" href="#">
+                            <picture>
+                                <source type="image/webp" srcset="img/design_2.webp 1x, img/design_2@2x.webp 2x">
+                                <img class="design-template__img" src="img/design_2.jpg" srcset="img/design_2.jpg@2x 2x"
+                                    alt="Design_2" width="212" height="216">
+                            </picture>
+                            <h3 class="design-template__title">Lorem ipsum dolor sit am...</h3>
+                        </a>
+                    </li>
+                    <li class="design-template">
+                        <a class="design-template__link" href="#">
+                            <picture>
+                                <source type="image/webp" srcset="img/design_3.webp 1x, img/design_3@2x.webp 2x">
+                                <img class="design-template__img" src="img/design_3.jpg" srcset="img/design_3.jpg@2x 2x"
+                                    alt="Design_3" width="212" height="216">
+                            </picture>
+                            <h3 class="design-template__title">Lorem ipsum dolor sit am...</h3>
+                        </a>
+                    </li>
+                    <li class="design-template">
+                        <a class="design-template__link" href="#">
+                            <picture>
+                                <source type="image/webp" srcset="img/design_4.webp 1x, img/design_4@2x.webp 2x">
+                                <img class="design-template__img" src="img/design_4.jpg" srcset="img/design_4.jpg@2x 2x"
+                                    alt="Design_4" width="212" height="216">
+                            </picture>
+                            <h3 class="design-template__title">Lorem ipsum dolor sit am...</h3>
+                        </a>
+                    </li>
+                    <li class="design-template">
+                        <a class="design-template__link" href="#">
+                            <picture>
+                                <source type="image/webp" srcset="img/design_5.webp 1x, img/design_5@2x.webp 2x">
+                                <img class="design-template__img" src="img/design_5.jpg" srcset="img/design_5.jpg@2x 2x"
+                                    alt="Design_5" width="212" height="216">
+                            </picture>
+                            <h3 class="design-template__title">Lorem ipsum dolor sit am...</h3>
+                        </a>
+                    </li>
+                    <li class="design-template">
+                        <a class="design-template__link" href="#">
+                            <picture>
+                                <source type="image/webp" srcset="img/design_6.webp 1x, img/design_6@2x.webp 2x">
+                                <img class="design-template__img" src="img/design_6.jpg" srcset="img/design_6.jpg@2x 2x"
+                                    alt="Design_6" width="212" height="216">
+                            </picture>
+                            <h3 class="design-template__title">Lorem ipsum dolor sit am...</h3>
+                        </a>
+                    </li>
+                    <li class="design-template">
+                        <a class="design-template__link" href="#">
+                            <picture>
+                                <source type="image/webp" srcset="img/design_7.webp 1x, img/design_7@2x.webp 2x">
+                                <img class="design-template__img" src="img/design_7.jpg" srcset="img/design_7.jpg@2x 2x"
+                                    alt="Design_7" width="212" height="216">
+                            </picture>
+                            <h3 class="design-template__title">Lorem ipsum dolor sit am...</h3>
+                        </a>
+                    </li>
+                    <li class="design-template">
+                        <a class="design-template__link" href="#">
+                            <picture>
+                                <source type="image/webp" srcset="img/design_8.webp 1x, img/design_8@2x.webp 2x">
+                                <img class="design-template__img" src="img/design_8.jpg" srcset="img/design_8.jpg@2x 2x"
+                                    alt="Design_8" width="212" height="216">
+                            </picture>
+                            <h3 class="design-template__title">Lorem ipsum dolor sit am...</h3>
+                        </a>
+                    </li>
+                    <li class="design-template">
+                        <a class="design-template__link" href="#">
+                            <picture>
+                                <source type="image/webp" srcset="img/design_9.webp 1x, img/design_9@2x.webp 2x">
+                                <img class="design-template__img" src="img/design_9.jpg" srcset="img/design_9.jpg@2x 2x"
+                                    alt="Design_9" width="212" height="216">
+                            </picture>
+                            <h3 class="design-template__title">Lorem ipsum dolor sit am...</h3>
+                        </a>
+                    </li>
+                    <li class="design-template">
+                        <a class="design-template__link" href="#">
+                            <picture>
+                                <source type="image/webp" srcset="img/design_10.webp 1x, img/design_10@2x.webp 2x">
+                                <img class="design-template__img" src="img/design_10.jpg"
+                                    srcset="img/design_10.jpg@2x 2x" alt="Design_10" width="212" height="216">
+                            </picture>
+                            <h3 class="design-template__title">Lorem ipsum dolor sit am...</h3>
+                        </a>
+                    </li>
+                    <li class="design-template">
+                        <a class="design-template__link" href="#">
+                            <picture>
+                                <source type="image/webp" srcset="img/design_11.webp 1x, img/design_11@2x.webp 2x">
+                                <img class="design-template__img" src="img/design_11.jpg"
+                                    srcset="img/design_11.jpg@2x 2x" alt="Design_11" width="212" height="216">
+                            </picture>
+                            <h3 class="design-template__title">Lorem ipsum dolor sit am...</h3>
+                        </a>
+                    </li>
+                    <li class="design-template">
+                        <a class="design-template__link" href="#">
+                            <picture>
+                                <source type="image/webp" srcset="img/design_12.webp 1x, img/design_12@2x.webp 2x">
+                                <img class="design-template__img" src="img/design_12.jpg"
+                                    srcset="img/design_12.jpg@2x 2x" alt="Design_12" width="212" height="216">
+                            </picture>
+                            <h3 class="design-template__title">Lorem ipsum dolor sit am...</h3>
+                        </a>
+                    </li>
+                    <li class="design-template">
+                        <a class="design-template__link" href="#">
+                            <picture>
+                                <source type="image/webp" srcset="img/design_13.webp 1x, img/design_13@2x.webp 2x">
+                                <img class="design-template__img" src="img/design_13.jpg"
+                                    srcset="img/design_13.jpg@2x 2x" alt="Design_13" width="212" height="216">
+                            </picture>
+                            <h3 class="design-template__title">Lorem ipsum dolor sit am...</h3>
+                        </a>
+                    </li>
+                    <li class="design-template">
+                        <a class="design-template__link" href="#">
+                            <picture>
+                                <source type="image/webp" srcset="img/design_14.webp 1x, img/design_14@2x.webp 2x">
+                                <img class="design-template__img" src="img/design_14.jpg"
+                                    srcset="img/design_14.jpg@2x 2x" alt="Design_14" width="212" height="216">
+                            </picture>
+                            <h3 class="design-template__title">Lorem ipsum dolor sit am...</h3>
+                        </a>
+                    </li>
+                    <li class="design-template">
+                        <a class="design-template__link" href="#">
+                            <picture>
+                                <source type="image/webp" srcset="img/design_15.webp 1x, img/design_15@2x.webp 2x">
+                                <img class="design-template__img" src="img/design_15.jpg"
+                                    srcset="img/design_15.jpg@2x 2x" alt="Design_15" width="212" height="216">
+                            </picture>
+                            <h3 class="design-template__title">Lorem ipsum dolor sit am...</h3>
+                        </a>
+                    </li>
+                    <li class="design-template">
+                        <a class="design-template__link" href="#">
+                            <picture>
+                                <source type="image/webp" srcset="img/design_16.webp 1x, img/design_16@2x.webp 2x">
+                                <img class="design-template__img" src="img/design_16.jpg"
+                                    srcset="img/design_16.jpg@2x 2x" alt="Design_16" width="212" height="216">
+                            </picture>
+                            <h3 class="design-template__title">Lorem ipsum dolor sit am...</h3>
+                        </a>
+                    </li>
+                    <li class="design-template">
+                        <a class="design-template__link" href="#">
+                            <picture>
+                                <source type="image/webp" srcset="img/design_17.webp 1x, img/design_17@2x.webp 2x">
+                                <img class="design-template__img" src="img/design_17.jpg"
+                                    srcset="img/design_17.jpg@2x 2x" alt="Design_17" width="212" height="216">
+                            </picture>
+                            <h3 class="design-template__title">Lorem ipsum dolor sit am...</h3>
+                        </a>
+                    </li>
+                    <li class="design-template">
+                        <a class="design-template__link" href="#">
+                            <picture>
+                                <source type="image/webp" srcset="img/design_18.webp 1x, img/design_18@2x.webp 2x">
+                                <img class="design-template__img" src="img/design_18.jpg"
+                                    srcset="img/design_18.jpg@2x 2x" alt="Design_18" width="212" height="216">
+                            </picture>
+                            <h3 class="design-template__title">Lorem ipsum dolor sit am...</h3>
+                        </a>
+                    </li>
+                    <li class="design-template">
+                        <a class="design-template__link" href="#">
+                            <picture>
+                                <source type="image/webp" srcset="img/design_19.webp 1x, img/design_19@2x.webp 2x">
+                                <img class="design-template__img" src="img/design_19.jpg"
+                                    srcset="img/design_19.jpg@2x 2x" alt="Design_19" width="212" height="216">
+                            </picture>
+                            <h3 class="design-template__title">Lorem ipsum dolor sit am...</h3>
+                        </a>
+                    </li>
+                    <li class="design-template">
+                        <a class="design-template__link" href="#">
+                            <picture>
+                                <source type="image/webp" srcset="img/design_20.webp 1x, img/design_20@2x.webp 2x">
+                                <img class="design-template__img" src="img/design_20.jpg"
+                                    srcset="img/design_20.jpg@2x 2x" alt="Design_20" width="212" height="216">
+                            </picture>
+                            <h3 class="design-template__title">Lorem ipsum dolor sit am...</h3>
+                        </a>
+                    </li>
+                    <li class="design-template">
+                        <a class="design-template__link" href="#">
+                            <picture>
+                                <source type="image/webp" srcset="img/design_21.webp 1x, img/design_21@2x.webp 2x">
+                                <img class="design-template__img" src="img/design_21.jpg"
+                                    srcset="img/design_21.jpg@2x 2x" alt="Design_21" width="212" height="216">
+                            </picture>
+                            <h3 class="design-template__title">Lorem ipsum dolor sit am...</h3>
+                        </a>
+                    </li>
+                    <li class="design-template">
+                        <a class="design-template__link" href="#">
+                            <picture>
+                                <source type="image/webp" srcset="img/design_22.webp 1x, img/design_22@2x.webp 2x">
+                                <img class="design-template__img" src="img/design_1.jpg"
+                                    srcset="img/design_22.jpg@2x 2x" alt="Design_22" width="212" height="216">
+                            </picture>
+                            <h3 class="design-template__title">Lorem ipsum dolor sit am...</h3>
+                        </a>
+                    </li>
+                    <li class="design-template">
+                        <a class="design-template__link" href="#">
+                            <picture>
+                                <source type="image/webp" srcset="img/design_23.webp 1x, img/design_23@2x.webp 2x">
+                                <img class="design-template__img" src="img/design_23.jpg"
+                                    srcset="img/design_23.jpg@2x 2x" alt="Design_23" width="212" height="216">
+                            </picture>
+                            <h3 class="design-template__title">Lorem ipsum dolor sit am...</h3>
+                        </a>
+                    </li>
+                    <li class="design-template">
+                        <a class="design-template__link" href="#">
+                            <picture>
+                                <source type="image/webp" srcset="img/design_24.webp 1x, img/design_24@2x.webp 2x">
+                                <img class="design-template__img" src="img/design_24.jpg"
+                                    srcset="img/design_24.jpg@2x 2x" alt="Design_24" width="212" height="216">
+                            </picture>
+                            <h3 class="design-template__title">Lorem ipsum dolor sit am...</h3>
+                        </a>
+                    </li>
+                    <li class="design-template">
+                        <a class="design-template__link" href="#">
+                            <picture>
+                                <source type="image/webp" srcset="img/design_25.webp 1x, img/design_25@2x.webp 2x">
+                                <img class="design-template__img" src="img/design_25.jpg"
+                                    srcset="img/design_25.jpg@2x 2x" alt="Design_25" width="212" height="216">
+                            </picture>
+                            <h3 class="design-template__title">Lorem ipsum dolor sit am...</h3>
+                        </a>
+                    </li>
+                    <li class="design-template">
+                        <a class="design-template__link" href="#">
+                            <picture>
+                                <source type="image/webp" srcset="img/design_26.webp 1x, img/design_26@2x.webp 2x">
+                                <img class="design-template__img" src="img/design_26.jpg"
+                                    srcset="img/design_26.jpg@2x 2x" alt="Design_26" width="212" height="216">
+                            </picture>
+                            <h3 class="design-template__title">Lorem ipsum dolor sit am...</h3>
+                        </a>
+                    </li>
+                    <li class="design-template">
+                        <a class="design-template__link" href="#">
+                            <picture>
+                                <source type="image/webp" srcset="img/design_27.webp 1x, img/design_27@2x.webp 2x">
+                                <img class="design-template__img" src="img/design_27.jpg"
+                                    srcset="img/design_27.jpg@2x 2x" alt="Design_27" width="212" height="216">
+                            </picture>
+                            <h3 class="design-template__title">Lorem ipsum dolor sit am...</h3>
+                        </a>
+                    </li>
+                    <li class="design-template">
+                        <a class="design-template__link" href="#">
+                            <picture>
+                                <source type="image/webp" srcset="img/design_28.webp 1x, img/design_28@2x.webp 2x">
+                                <img class="design-template__img" src="img/design_28.jpg"
+                                    srcset="img/design_28.jpg@2x 2x" alt="Design_28" width="212" height="216">
+                            </picture>
+                            <h3 class="design-template__title">Lorem ipsum dolor sit am...</h3>
+                        </a>
+                    </li>
+                    <li class="design-template">
+                        <a class="design-template__link" href="#">
+                            <picture>
+                                <source type="image/webp" srcset="img/design_29.webp 1x, img/design_29@2x.webp 2x">
+                                <img class="design-template__img" src="img/design_29.jpg"
+                                    srcset="img/design_29.jpg@2x 2x" alt="Design_29" width="212" height="216">
+                            </picture>
+                            <h3 class="design-template__title">Lorem ipsum dolor sit am...</h3>
+                        </a>
+                    </li>
+                    <li class="design-template">
+                        <a class="design-template__link" href="#">
+                            <picture>
+                                <source type="image/webp" srcset="img/design_30.webp 1x, img/design_30@2x.webp 2x">
+                                <img class="design-template__img" src="img/design_30.jpg"
+                                    srcset="img/design_30.jpg@2x 2x" alt="Design_30" width="212" height="216">
+                            </picture>
+                            <h3 class="design-template__title">Lorem ipsum dolor sit am...</h3>
+                        </a>
+                    </li>
+                    <li class="design-template">
+                        <a class="design-template__link" href="#">
+                            <picture>
+                                <source type="image/webp" srcset="img/design_31.webp 1x, img/design_31@2x.webp 2x">
+                                <img class="design-template__img" src="img/design_31.jpg"
+                                    srcset="img/design_31.jpg@2x 2x" alt="Design_31" width="212" height="216">
+                            </picture>
+                            <h3 class="design-template__title">Lorem ipsum dolor sit am...</h3>
+                        </a>
+                    </li>
+                    <li class="design-template">
+                        <a class="design-template__link" href="#">
+                            <picture>
+                                <source type="image/webp" srcset="img/design_32.webp 1x, img/design_32@2x.webp 2x">
+                                <img class="design-template__img" src="img/design_32.jpg"
+                                    srcset="img/design_32.jpg@2x 2x" alt="Design_32" width="212" height="216">
+                            </picture>
+                            <h3 class="design-template__title">Lorem ipsum dolor sit am...</h3>
+                        </a>
+                    </li>
+                    <li class="design-template">
+                        <a class="design-template__link" href="#">
+                            <picture>
+                                <source type="image/webp" srcset="img/design_33.webp 1x, img/design_33@2x.webp 2x">
+                                <img class="design-template__img" src="img/design_33.jpg"
+                                    srcset="img/design_33.jpg@2x 2x" alt="Design_33" width="212" height="216">
+                            </picture>
+                            <h3 class="design-template__title">Lorem ipsum dolor sit am...</h3>
+                        </a>
+                    </li>
+                    <li class="design-template">
+                        <a class="design-template__link" href="#">
+                            <picture>
+                                <source type="image/webp" srcset="img/design_34.webp 1x, img/design_34@2x.webp 2x">
+                                <img class="design-template__img" src="img/design_34.jpg"
+                                    srcset="img/design_34.jpg@2x 2x" alt="Design_34" width="212" height="216">
+                            </picture>
+                            <h3 class="design-template__title">Lorem ipsum dolor sit am...</h3>
+                        </a>
+                    </li>
+                    <li class="design-template">
+                        <a class="design-template__link" href="#">
+                            <picture>
+                                <source type="image/webp" srcset="img/design_35.webp 1x, img/design_35@2x.webp 2x">
+                                <img class="design-template__img" src="img/design_35.jpg"
+                                    srcset="img/design_35.jpg@2x 2x" alt="Design_35" width="212" height="216">
+                            </picture>
+                            <h3 class="design-template__title">Lorem ipsum dolor sit am...</h3>
+                        </a>
+                    </li>
+                    <li class="design-template">
+                        <a class="design-template__link" href="#">
+                            <picture>
+                                <source type="image/webp" srcset="img/design_36.webp 1x, img/design_36@2x.webp 2x">
+                                <img class="design-template__img" src="img/design_36.jpg"
+                                    srcset="img/design_36.jpg@2x 2x" alt="Design_36" width="212" height="216">
+                            </picture>
+                            <h3 class="design-template__title">Lorem ipsum dolor sit am...</h3>
+                        </a>
+                    </li>
+                    <li class="design-template">
+                        <a class="design-template__link" href="#">
+                            <picture>
+                                <source type="image/webp" srcset="img/design_37.webp 1x, img/design_37@2x.webp 2x">
+                                <img class="design-template__img" src="img/design_37.jpg"
+                                    srcset="img/design_37.jpg@2x 2x" alt="Design_37" width="212" height="216">
+                            </picture>
+                            <h3 class="design-template__title">Lorem ipsum dolor sit am...</h3>
+                        </a>
+                    </li>
+                    <li class="design-template">
+                        <a class="design-template__link" href="#">
+                            <picture>
+                                <source type="image/webp" srcset="img/design_38.webp 1x, img/design_38@2x.webp 2x">
+                                <img class="design-template__img" src="img/design_38.jpg"
+                                    srcset="img/design_38.jpg@2x 2x" alt="Design_38" width="212" height="216">
+                            </picture>
+                            <h3 class="design-template__title">Lorem ipsum dolor sit am...</h3>
+                        </a>
+                    </li>
+                    <li class="design-template">
+                        <a class="design-template__link" href="#">
+                            <picture>
+                                <source type="image/webp" srcset="img/design_39.webp 1x, img/design_39@2x.webp 2x">
+                                <img class="design-template__img" src="img/design_39.jpg"
+                                    srcset="img/design_39.jpg@2x 2x" alt="Design_39" width="212" height="216">
+                            </picture>
+                            <h3 class="design-template__title">Lorem ipsum dolor sit am...</h3>
+                        </a>
+                    </li>
+                    <li class="design-template">
+                        <a class="design-template__link" href="#">
+                            <picture>
+                                <source type="image/webp" srcset="img/design_40.webp 1x, img/design_40@2x.webp 2x">
+                                <img class="design-template__img" src="img/design_40.jpg"
+                                    srcset="img/design_40.jpg@2x 2x" alt="Design_40" width="212" height="216">
+                            </picture>
+                            <h3 class="design-template__title">Lorem ipsum dolor sit am...</h3>
+                        </a>
+                    </li>
+
                 </ul>
 
                 <div class="design-pagination">
-                    <button class="design-pagination__prev">prev</button>
-                    <button class="design-pagination__next">next</button>
-                    <a class="design-pagination__link" href="#">1</a>
-                    <a class="design-pagination__link" href="#">2</a>
-                    <a class="design-pagination__link" href="#">3</a>
-                    <a class="design-pagination__link" href="#">4</a>
-                    <a class="design-pagination__link" href="#">5</a>
-                    <a class="design-pagination__link" href="#">...</a>
-                    <a class="design-pagination__link" href="#">54</a>
+                    <ul class="design-pagination__list">
+                        <li class="design-pagination__item">
+                            <button class="design-pagination__prev">
+                                <svg width="6" height="17">
+                                    <use xlink:href="img/sprites/sprite.svg#pagination-left"></use>
+                                </svg>
+                            </button>
+                        </li>
+                        <li class="design-pagination__item">
+                            <a class="design-pagination__link" href="#">1</a>
+                        </li>
+                        <li class="design-pagination__item">
+                            <a class="design-pagination__link" href="#">2</a>
+                        </li>
+                        <li class="design-pagination__item">
+                            <a class="design-pagination__link" href="#">3</a>
+                        </li>
+                        <li class="design-pagination__item">
+                            <a class="design-pagination__link" href="#">4</a>
+                        </li>
+                        <li class="design-pagination__item">
+                            <a class="design-pagination__link" href="#">5</a>
+                        </li>
+                        <li class="design-pagination__item">
+                            <a class="design-pagination__link" href="#">...</a>
+                        </li>
+                        <li class="design-pagination__item">
+                            <a class="design-pagination__link" href="#">54</a>
+                        </li>
+                        <li class="design-pagination__item">
+                            <button class="design-pagination__next"><svg width="6" height="17">
+                                    <use xlink:href="img/sprites/sprite.svg#pagination-right">
+                                    </use>
+                                </svg>
+                            </button>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </section>

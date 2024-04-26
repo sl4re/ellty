@@ -12,4 +12,12 @@
   <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5"/>
 </symbol>
 
+<symbol id="pagination-left" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 17" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+    <path d="M4.99309 4.00007L1.04297 7.9502L5.05069 11.9579" stroke="#36373C" stroke-linecap="round" stroke-linejoin="round"/>
+</symbol>
+
+<symbol id="pagination-right" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 17" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+    <path d="M1.00691 4.00007L4.95703 7.9502L0.949309 11.9579" stroke="#36373C" stroke-linecap="round" stroke-linejoin="round"/>
+</symbol>
+
 </symbol></svg>
