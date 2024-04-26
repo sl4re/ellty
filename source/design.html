@@ -69,21 +69,103 @@
 
         <section class="design-content">
             <div class="design-content__inner">
-                <h2 class="visually-hidden">Design selection settings</h2>
-                <form class="design-form" action="#">
-                    <button class="design-form__filters">Filters</button>
+                <h2 class="visually-hidden">Design selection filters</h2>
 
-                    <button class="design-form__colors">Colors</button>
-                    <div class="design-form__colors-wrapper">
-                        <span>X</span>
-                        <span>X</span>
-                        <span>X</span>
+                <!--Здесь добавляется filters--open-mobile-->
+                <div class="design-filters">
+                    <button class="design-filters__show-btn" type="button"><span>Filters</span></button>
+
+                    <div class="design-filters__inner">
+                        <div class="design-filters__wrapper">
+                            <button class="design-filters__btn show-popular">Popular</button>
+                            <div class="design-filters__items popular">
+                                <a class="design-filters__link" href="#">1</a>
+                                <a class="design-filters__link" href="#">2</a>
+                                <a class="design-filters__link" href="#">3</a>
+                            </div>
+                        </div>
+
+                        <div class="design-filters__wrapper">
+                            <button class="design-filters__btn show-media">Social Media</button>
+                            <div class="design-filters__items social-media">
+                                <a class="design-filters__link" href="#">Instagram Post</a>
+                                <a class="design-filters__link" href="#">Instagram Stories</a>
+                                <a class="design-filters__link" href="#">Facebook Post</a>
+                                <a class="design-filters__link" href="#">Pinterest Pin</a>
+                            </div>
+                        </div>
+
+                        <div class="design-filters__wrapper">
+                            <button class="design-filters__btn show-marketing">Marketing</button>
+                            <div class="design-filters__items marketing">
+                                <a class="design-filters__link" href="#">7</a>
+                                <a class="design-filters__link" href="#">8</a>
+                                <a class="design-filters__link" href="#">9</a>
+                            </div>
+                        </div>
+
+                        <div class="design-filters__wrapper">
+                            <button class="design-filters__btn show-advertising">Advertising</button>
+                            <div class="design-filters__items advertising">
+                                <a class="design-filters__link" href="#">10</a>
+                                <a class="design-filters__link" href="#">11</a>
+                                <a class="design-filters__link" href="#">12</a>
+                            </div>
+                        </div>
+
+                        <div class="design-filters__wrapper">
+                            <button class="design-filters__btn show-branding">Branding</button>
+                            <div class="design-filters__items branding">
+                                <a class="design-filters__link" href="#">13</a>
+                                <a class="design-filters__link" href="#">14</a>
+                                <a class="design-filters__link" href="#">15</a>
+                            </div>
+                        </div>
+
+                        <div class="design-filters__wrapper">
+                            <button class="design-filters__btn show-office">Office</button>
+                            <div class="design-filters__items office">
+                                <a class="design-filters__link" href="#">16</a>
+                                <a class="design-filters__link" href="#">17</a>
+                                <a class="design-filters__link" href="#">18</a>
+                            </div>
+                        </div>
+
+                        <div class="design-filters__wrapper">
+                            <button class="design-filters__btn show-more">More</button>
+                            <div class="design-filters__items more">
+                                <a class="design-filters__link" href="#">19</a>
+                                <a class="design-filters__link" href="#">20</a>
+                                <a class="design-filters__link" href="#">21</a>
+                            </div>
+                        </div>
+
+                        <div class="design-filters__colors-wrapper">
+                            <button class="design-filters__color-btn pallette"></button>
+                            <button class="design-filters__color-btn aqua"></button>
+                            <button class="design-filters__color-btn blue"></button>
+                            <button class="design-filters__color-btn violet"></button>
+                            <button class="design-filters__color-btn pink"></button>
+                            <button class="design-filters__color-btn red"></button>
+                            <button class="design-filters__color-btn orange"></button>
+                            <button class="design-filters__color-btn yellow"></button>
+                            <button class="design-filters__color-btn green"></button>
+                            <button class="design-filters__color-btn black"></button>
+                            <button class="design-filters__color-btn grey"></button>
+                            <button class="design-filters__color-btn white"></button>
+                        </div>
+
+                        <button class="design-filters__clear" type="button">Clear all <span>(1)</span></button>
+
+                        <div class="design-filters__mobile-btns">
+                            <button class="design-filters__clear-btn">Clear all</button>
+                            <button class="design-filters__apply-btn">Apply</button>
+                        </div>
                     </div>
-
-                    <button class="design-form__clear">Clear all <span>(1)</span></button>
-                </form>
+                </div>
 
                 <input class="design-search" type="search" placeholder="Search">
+
 
                 <div class="design-tags">
                     <ul class="design-tags__list">
@@ -187,7 +269,7 @@
                                 <img class="design-template__img" src="img/design_1.jpg" srcset="img/design_1.jpg@2x 2x"
                                     alt="Design_1" width="212" height="216">
                             </picture>
-                            <h3 class="design-template__title">Lorem ipsum dolor sit am...</h3>
+                            <h3 class="design-template__title">Unforgettable Flight</h3>
                         </a>
                     </li>
                     <li class="design-template">
@@ -197,7 +279,7 @@
                                 <img class="design-template__img" src="img/design_2.jpg" srcset="img/design_2.jpg@2x 2x"
                                     alt="Design_2" width="212" height="216">
                             </picture>
-                            <h3 class="design-template__title">Lorem ipsum dolor sit am...</h3>
+                            <h3 class="design-template__title">Merry Christmas</h3>
                         </a>
                     </li>
                     <li class="design-template">
@@ -207,7 +289,7 @@
                                 <img class="design-template__img" src="img/design_3.jpg" srcset="img/design_3.jpg@2x 2x"
                                     alt="Design_3" width="212" height="216">
                             </picture>
-                            <h3 class="design-template__title">Lorem ipsum dolor sit am...</h3>
+                            <h3 class="design-template__title">The most honest offer</h3>
                         </a>
                     </li>
                     <li class="design-template">
@@ -217,7 +299,7 @@
                                 <img class="design-template__img" src="img/design_4.jpg" srcset="img/design_4.jpg@2x 2x"
                                     alt="Design_4" width="212" height="216">
                             </picture>
-                            <h3 class="design-template__title">Lorem ipsum dolor sit am...</h3>
+                            <h3 class="design-template__title">Just breathe</h3>
                         </a>
                     </li>
                     <li class="design-template">
@@ -227,7 +309,7 @@
                                 <img class="design-template__img" src="img/design_5.jpg" srcset="img/design_5.jpg@2x 2x"
                                     alt="Design_5" width="212" height="216">
                             </picture>
-                            <h3 class="design-template__title">Lorem ipsum dolor sit am...</h3>
+                            <h3 class="design-template__title">Your feedback is the best reward</h3>
                         </a>
                     </li>
                     <li class="design-template">
@@ -237,7 +319,7 @@
                                 <img class="design-template__img" src="img/design_6.jpg" srcset="img/design_6.jpg@2x 2x"
                                     alt="Design_6" width="212" height="216">
                             </picture>
-                            <h3 class="design-template__title">Lorem ipsum dolor sit am...</h3>
+                            <h3 class="design-template__title">Merry Christmas</h3>
                         </a>
                     </li>
                     <li class="design-template">
@@ -247,7 +329,7 @@
                                 <img class="design-template__img" src="img/design_7.jpg" srcset="img/design_7.jpg@2x 2x"
                                     alt="Design_7" width="212" height="216">
                             </picture>
-                            <h3 class="design-template__title">Lorem ipsum dolor sit am...</h3>
+                            <h3 class="design-template__title">Winter discount</h3>
                         </a>
                     </li>
                     <li class="design-template">
@@ -257,7 +339,7 @@
                                 <img class="design-template__img" src="img/design_8.jpg" srcset="img/design_8.jpg@2x 2x"
                                     alt="Design_8" width="212" height="216">
                             </picture>
-                            <h3 class="design-template__title">Lorem ipsum dolor sit am...</h3>
+                            <h3 class="design-template__title">Beauti skin</h3>
                         </a>
                     </li>
                     <li class="design-template">
@@ -267,7 +349,7 @@
                                 <img class="design-template__img" src="img/design_9.jpg" srcset="img/design_9.jpg@2x 2x"
                                     alt="Design_9" width="212" height="216">
                             </picture>
-                            <h3 class="design-template__title">Lorem ipsum dolor sit am...</h3>
+                            <h3 class="design-template__title">Merry xmas</h3>
                         </a>
                     </li>
                     <li class="design-template">
@@ -277,7 +359,7 @@
                                 <img class="design-template__img" src="img/design_10.jpg"
                                     srcset="img/design_10.jpg@2x 2x" alt="Design_10" width="212" height="216">
                             </picture>
-                            <h3 class="design-template__title">Lorem ipsum dolor sit am...</h3>
+                            <h3 class="design-template__title">Autumn arrivals</h3>
                         </a>
                     </li>
                     <li class="design-template">
@@ -287,7 +369,7 @@
                                 <img class="design-template__img" src="img/design_11.jpg"
                                     srcset="img/design_11.jpg@2x 2x" alt="Design_11" width="212" height="216">
                             </picture>
-                            <h3 class="design-template__title">Lorem ipsum dolor sit am...</h3>
+                            <h3 class="design-template__title">YOGA</h3>
                         </a>
                     </li>
                     <li class="design-template">
@@ -297,7 +379,7 @@
                                 <img class="design-template__img" src="img/design_12.jpg"
                                     srcset="img/design_12.jpg@2x 2x" alt="Design_12" width="212" height="216">
                             </picture>
-                            <h3 class="design-template__title">Lorem ipsum dolor sit am...</h3>
+                            <h3 class="design-template__title">Great Big Sale</h3>
                         </a>
                     </li>
                     <li class="design-template">
@@ -307,7 +389,7 @@
                                 <img class="design-template__img" src="img/design_13.jpg"
                                     srcset="img/design_13.jpg@2x 2x" alt="Design_13" width="212" height="216">
                             </picture>
-                            <h3 class="design-template__title">Lorem ipsum dolor sit am...</h3>
+                            <h3 class="design-template__title">Merry xmas</h3>
                         </a>
                     </li>
                     <li class="design-template">
@@ -317,7 +399,7 @@
                                 <img class="design-template__img" src="img/design_14.jpg"
                                     srcset="img/design_14.jpg@2x 2x" alt="Design_14" width="212" height="216">
                             </picture>
-                            <h3 class="design-template__title">Lorem ipsum dolor sit am...</h3>
+                            <h3 class="design-template__title">Christmas</h3>
                         </a>
                     </li>
                     <li class="design-template">
@@ -327,7 +409,7 @@
                                 <img class="design-template__img" src="img/design_15.jpg"
                                     srcset="img/design_15.jpg@2x 2x" alt="Design_15" width="212" height="216">
                             </picture>
-                            <h3 class="design-template__title">Lorem ipsum dolor sit am...</h3>
+                            <h3 class="design-template__title">Talk show, Beauty talk</h3>
                         </a>
                     </li>
                     <li class="design-template">
@@ -337,7 +419,7 @@
                                 <img class="design-template__img" src="img/design_16.jpg"
                                     srcset="img/design_16.jpg@2x 2x" alt="Design_16" width="212" height="216">
                             </picture>
-                            <h3 class="design-template__title">Lorem ipsum dolor sit am...</h3>
+                            <h3 class="design-template__title">Bedroom design</h3>
                         </a>
                     </li>
                     <li class="design-template">
@@ -347,7 +429,7 @@
                                 <img class="design-template__img" src="img/design_17.jpg"
                                     srcset="img/design_17.jpg@2x 2x" alt="Design_17" width="212" height="216">
                             </picture>
-                            <h3 class="design-template__title">Lorem ipsum dolor sit am...</h3>
+                            <h3 class="design-template__title">Merry Christmas</h3>
                         </a>
                     </li>
                     <li class="design-template">
@@ -357,7 +439,7 @@
                                 <img class="design-template__img" src="img/design_18.jpg"
                                     srcset="img/design_18.jpg@2x 2x" alt="Design_18" width="212" height="216">
                             </picture>
-                            <h3 class="design-template__title">Lorem ipsum dolor sit am...</h3>
+                            <h3 class="design-template__title">Friends forever</h3>
                         </a>
                     </li>
                     <li class="design-template">
@@ -367,7 +449,7 @@
                                 <img class="design-template__img" src="img/design_19.jpg"
                                     srcset="img/design_19.jpg@2x 2x" alt="Design_19" width="212" height="216">
                             </picture>
-                            <h3 class="design-template__title">Lorem ipsum dolor sit am...</h3>
+                            <h3 class="design-template__title">Brazil party</h3>
                         </a>
                     </li>
                     <li class="design-template">
@@ -377,7 +459,7 @@
                                 <img class="design-template__img" src="img/design_20.jpg"
                                     srcset="img/design_20.jpg@2x 2x" alt="Design_20" width="212" height="216">
                             </picture>
-                            <h3 class="design-template__title">Lorem ipsum dolor sit am...</h3>
+                            <h3 class="design-template__title">Merry Christmas</h3>
                         </a>
                     </li>
                     <li class="design-template">
@@ -387,7 +469,7 @@
                                 <img class="design-template__img" src="img/design_21.jpg"
                                     srcset="img/design_21.jpg@2x 2x" alt="Design_21" width="212" height="216">
                             </picture>
-                            <h3 class="design-template__title">Lorem ipsum dolor sit am...</h3>
+                            <h3 class="design-template__title">Collection</h3>
                         </a>
                     </li>
                     <li class="design-template">
@@ -397,7 +479,7 @@
                                 <img class="design-template__img" src="img/design_1.jpg"
                                     srcset="img/design_22.jpg@2x 2x" alt="Design_22" width="212" height="216">
                             </picture>
-                            <h3 class="design-template__title">Lorem ipsum dolor sit am...</h3>
+                            <h3 class="design-template__title">Online yoga class</h3>
                         </a>
                     </li>
                     <li class="design-template">
@@ -407,7 +489,7 @@
                                 <img class="design-template__img" src="img/design_23.jpg"
                                     srcset="img/design_23.jpg@2x 2x" alt="Design_23" width="212" height="216">
                             </picture>
-                            <h3 class="design-template__title">Lorem ipsum dolor sit am...</h3>
+                            <h3 class="design-template__title">Carnival</h3>
                         </a>
                     </li>
                     <li class="design-template">
@@ -417,7 +499,7 @@
                                 <img class="design-template__img" src="img/design_24.jpg"
                                     srcset="img/design_24.jpg@2x 2x" alt="Design_24" width="212" height="216">
                             </picture>
-                            <h3 class="design-template__title">Lorem ipsum dolor sit am...</h3>
+                            <h3 class="design-template__title">Escape the ordinary</h3>
                         </a>
                     </li>
                     <li class="design-template">
@@ -427,7 +509,7 @@
                                 <img class="design-template__img" src="img/design_25.jpg"
                                     srcset="img/design_25.jpg@2x 2x" alt="Design_25" width="212" height="216">
                             </picture>
-                            <h3 class="design-template__title">Lorem ipsum dolor sit am...</h3>
+                            <h3 class="design-template__title">Flash sale</h3>
                         </a>
                     </li>
                     <li class="design-template">
@@ -437,7 +519,7 @@
                                 <img class="design-template__img" src="img/design_26.jpg"
                                     srcset="img/design_26.jpg@2x 2x" alt="Design_26" width="212" height="216">
                             </picture>
-                            <h3 class="design-template__title">Lorem ipsum dolor sit am...</h3>
+                            <h3 class="design-template__title">Merry Christmas</h3>
                         </a>
                     </li>
                     <li class="design-template">
@@ -447,7 +529,7 @@
                                 <img class="design-template__img" src="img/design_27.jpg"
                                     srcset="img/design_27.jpg@2x 2x" alt="Design_27" width="212" height="216">
                             </picture>
-                            <h3 class="design-template__title">Lorem ipsum dolor sit am...</h3>
+                            <h3 class="design-template__title">Welcome to the team</h3>
                         </a>
                     </li>
                     <li class="design-template">
@@ -457,7 +539,7 @@
                                 <img class="design-template__img" src="img/design_28.jpg"
                                     srcset="img/design_28.jpg@2x 2x" alt="Design_28" width="212" height="216">
                             </picture>
-                            <h3 class="design-template__title">Lorem ipsum dolor sit am...</h3>
+                            <h3 class="design-template__title">Special burger</h3>
                         </a>
                     </li>
                     <li class="design-template">
@@ -467,7 +549,7 @@
                                 <img class="design-template__img" src="img/design_29.jpg"
                                     srcset="img/design_29.jpg@2x 2x" alt="Design_29" width="212" height="216">
                             </picture>
-                            <h3 class="design-template__title">Lorem ipsum dolor sit am...</h3>
+                            <h3 class="design-template__title">Happy birthday</h3>
                         </a>
                     </li>
                     <li class="design-template">
@@ -477,7 +559,7 @@
                                 <img class="design-template__img" src="img/design_30.jpg"
                                     srcset="img/design_30.jpg@2x 2x" alt="Design_30" width="212" height="216">
                             </picture>
-                            <h3 class="design-template__title">Lorem ipsum dolor sit am...</h3>
+                            <h3 class="design-template__title">Sweet donuts</h3>
                         </a>
                     </li>
                     <li class="design-template">
@@ -487,7 +569,7 @@
                                 <img class="design-template__img" src="img/design_31.jpg"
                                     srcset="img/design_31.jpg@2x 2x" alt="Design_31" width="212" height="216">
                             </picture>
-                            <h3 class="design-template__title">Lorem ipsum dolor sit am...</h3>
+                            <h3 class="design-template__title">Special promo</h3>
                         </a>
                     </li>
                     <li class="design-template">
@@ -497,7 +579,7 @@
                                 <img class="design-template__img" src="img/design_32.jpg"
                                     srcset="img/design_32.jpg@2x 2x" alt="Design_32" width="212" height="216">
                             </picture>
-                            <h3 class="design-template__title">Lorem ipsum dolor sit am...</h3>
+                            <h3 class="design-template__title">Santa</h3>
                         </a>
                     </li>
                     <li class="design-template">
@@ -507,7 +589,7 @@
                                 <img class="design-template__img" src="img/design_33.jpg"
                                     srcset="img/design_33.jpg@2x 2x" alt="Design_33" width="212" height="216">
                             </picture>
-                            <h3 class="design-template__title">Lorem ipsum dolor sit am...</h3>
+                            <h3 class="design-template__title">Car rental</h3>
                         </a>
                     </li>
                     <li class="design-template">
@@ -517,7 +599,7 @@
                                 <img class="design-template__img" src="img/design_34.jpg"
                                     srcset="img/design_34.jpg@2x 2x" alt="Design_34" width="212" height="216">
                             </picture>
-                            <h3 class="design-template__title">Lorem ipsum dolor sit am...</h3>
+                            <h3 class="design-template__title">New podcast</h3>
                         </a>
                     </li>
                     <li class="design-template">
@@ -527,7 +609,7 @@
                                 <img class="design-template__img" src="img/design_35.jpg"
                                     srcset="img/design_35.jpg@2x 2x" alt="Design_35" width="212" height="216">
                             </picture>
-                            <h3 class="design-template__title">Lorem ipsum dolor sit am...</h3>
+                            <h3 class="design-template__title">Online yoga class</h3>
                         </a>
                     </li>
                     <li class="design-template">
@@ -537,7 +619,7 @@
                                 <img class="design-template__img" src="img/design_36.jpg"
                                     srcset="img/design_36.jpg@2x 2x" alt="Design_36" width="212" height="216">
                             </picture>
-                            <h3 class="design-template__title">Lorem ipsum dolor sit am...</h3>
+                            <h3 class="design-template__title">Beauty skin</h3>
                         </a>
                     </li>
                     <li class="design-template">
@@ -547,7 +629,7 @@
                                 <img class="design-template__img" src="img/design_37.jpg"
                                     srcset="img/design_37.jpg@2x 2x" alt="Design_37" width="212" height="216">
                             </picture>
-                            <h3 class="design-template__title">Lorem ipsum dolor sit am...</h3>
+                            <h3 class="design-template__title">Flash sale</h3>
                         </a>
                     </li>
                     <li class="design-template">
@@ -557,7 +639,7 @@
                                 <img class="design-template__img" src="img/design_38.jpg"
                                     srcset="img/design_38.jpg@2x 2x" alt="Design_38" width="212" height="216">
                             </picture>
-                            <h3 class="design-template__title">Lorem ipsum dolor sit am...</h3>
+                            <h3 class="design-template__title">Merry xmas</h3>
                         </a>
                     </li>
                     <li class="design-template">
@@ -567,7 +649,7 @@
                                 <img class="design-template__img" src="img/design_39.jpg"
                                     srcset="img/design_39.jpg@2x 2x" alt="Design_39" width="212" height="216">
                             </picture>
-                            <h3 class="design-template__title">Lorem ipsum dolor sit am...</h3>
+                            <h3 class="design-template__title">Great big sale</h3>
                         </a>
                     </li>
                     <li class="design-template">
@@ -577,7 +659,7 @@
                                 <img class="design-template__img" src="img/design_40.jpg"
                                     srcset="img/design_40.jpg@2x 2x" alt="Design_40" width="212" height="216">
                             </picture>
-                            <h3 class="design-template__title">Lorem ipsum dolor sit am...</h3>
+                            <h3 class="design-template__title">Autumn arrivals</h3>
                         </a>
                     </li>
 

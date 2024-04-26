@@ -29,7 +29,8 @@
                 "templates templates"
                 "pagination pagination";
 
-            grid-template-columns: auto auto;
+            grid-template-columns: 161px 1fr;
+            column-gap: 20px;
         }
 
         @media (max-width: 768px) {
@@ -43,6 +44,14 @@
 
             grid-template-columns: auto;
         }
+    }
+    &__inner--filters-closed {
+        grid-template-areas:
+            "filters search "
+            "tags tags"
+            "breadcrumbs breadcrumbs"
+            "templates templates"
+            "pagination pagination";
     }
 }
 
@@ -66,6 +75,11 @@
     grid-area: tags;
     position: relative;
     margin-bottom: 30px;
+    z-index: 1;
+
+    @media (max-width: 768px) {
+        margin-bottom: 24px;
+    }
 }
 
 .design-tags__list {
@@ -89,6 +103,11 @@
     border: none;
     border-radius: 36px;
     background-color: var(--color-bg-first);
+    cursor: pointer;
+
+    &:hover {
+        background-color: var(--color-main);
+    }
 }
 
 .design-tags__arrow-btn {
@@ -112,10 +131,19 @@
     justify-content: space-between;
     width: 100%;
     margin-bottom: 30px;
+    z-index: -1;
+
+    @media (max-width: 768px) {
+        margin-bottom: 24px;
+    }
 }
 
 .breadcrumbs__templates {
     font-size: 14px;
+
+    @media (max-width: 480px) {
+        display: none;
+    }
 }
 
 // КАРТОЧКИ

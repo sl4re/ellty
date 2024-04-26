@@ -1,4 +1,295 @@
-.design-form {
+.design-filters {
     grid-area: filters;
-    width: 213px;
+    max-width: 213px;
+
+    @media (max-width: 768px) {
+        max-width: 100%;
+    }
+}
+
+.design-filters__show-btn {
+    width: 100%;
+    background-color: transparent;
+    border: 1px solid var(--color-bg-first);
+    border-radius: 4px;
+    padding: 10px 0;
+    margin-bottom: 20px;
+    cursor: pointer;
+    background-image: url(../img/filters.svg);
+    background-repeat: no-repeat;
+    background-size: 21px 18px;
+    background-position: 30% center;
+
+    & span {
+        margin-left: 29px;
+    }
+
+    &:hover {
+        background-color: var(--color-bg-first);
+    }
+
+    @media (max-width: 768px) {
+        background-position: 45% center;
+        padding: 14px 0;
+    }
+
+    @media (max-width: 530px) {
+        background-position: 40% center;
+    }
+}
+
+.design-filters__wrapper + .design-filters__wrapper {
+    margin-top: 10px;
+}
+
+.design-filters__btn {
+    line-height: 20.8px;
+    background-color: transparent;
+    border: none;
+    color: var(--color-text-main);
+    display: block;
+    padding: 10px 10px 9px;
+    border-radius: 4px;
+    width: 100%;
+    text-align: left;
+    cursor: pointer;
+    background-image: url(../img/acc_arrow-down.svg);
+    background-repeat: no-repeat;
+    background-size: 20px 17px;
+    background-position: calc(100% - 10px) center;
+
+    &:hover {
+        background-color: var(--color-bg-first);
+    }
+}
+
+.design-filters__wrapper:has(.popular--opened) .design-filters__btn,
+.design-filters__wrapper:has(.social-media--opened) .design-filters__btn,
+.design-filters__wrapper:has(.marketing--opened) .design-filters__btn,
+.design-filters__wrapper:has(.advertising--opened) .design-filters__btn,
+.design-filters__wrapper:has(.branding--opened) .design-filters__btn,
+.design-filters__wrapper:has(.office--opened) .design-filters__btn,
+.design-filters__wrapper:has(.more--opened) .design-filters__btn {
+    background-image: url(../img/acc_arrow-up.svg);
+}
+
+.design-filters__items {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding-left: 35px;
+
+    :first-child {
+        margin-top: 10px;
+    }
+}
+
+.design-filters__link {
+    font-size: 14px;
+    color: var(--color-text-secondary);
+    border-radius: 4px;
+    padding: 5px 0 5px 5px;
+
+    &:hover {
+        background-color: var(--color-bg-first);
+    }
+}
+
+.design-filters__colors-wrapper {
+    display: flex;
+    gap: 6px;
+    flex-wrap: wrap;
+    margin: 20px 0;
+}
+
+.design-filters__color-btn {
+    width: 30px;
+    height: 30px;
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+.design-filters__clear {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: normal;
+    color: var(--color-secondary);
+    background-color: transparent;
+    border: none;
+}
+
+.pallette {
+    background-image: url(../img/gradient.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: relative;
+}
+
+.pallette::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 22px;
+    height: 22px;
+    background-color: #fff;
+    border-radius: 2px;
+    background-image: url(../img/crest.svg);
+    background-repeat: no-repeat;
+    background-size: 14px 14px;
+    background-position: center;
+}
+
+.aqua {
+    background-color: #00e0e4;
+}
+
+.blue {
+    background-color: #5b4bfe;
+}
+
+.violet {
+    background-color: #d100fc;
+}
+
+.pink {
+    background-color: #ff2ab7;
+}
+
+.red {
+    background-color: #ff293c;
+}
+
+.orange {
+    background-color: #ff7f34;
+}
+
+.yellow {
+    background-color: #ffdd49;
+}
+
+.green {
+    background-color: #2dde54;
+}
+
+.black {
+    background-color: #14181b;
+}
+
+.grey {
+    background-color: #c0c6cb;
+}
+
+.white {
+    background-color: #fff;
+    border: 1px solid var(--color-border);
+}
+
+.design-filters__mobile-btns {
+    display: none;
+}
+
+.filters--open {
+    display: none;
+}
+
+// Открытие фильтров
+
+@media (max-width: 1024px) {
+    .design-filters__inner {
+        display: none;
+    }
+
+    .filters--open-mobile {
+        display: block;
+        position: absolute;
+        top: 68px;
+        left: 0;
+        right: 0;
+        max-width: 100%;
+        background-color: #fff;
+        border-bottom: 2px solid var(--color-main);
+        z-index: 10;
+    }
+
+    .filters--open-mobile .design-filters__inner {
+        display: block;
+        padding: 0 32px;
+    }
+
+    .filters--open-mobile .design-filters__show-btn {
+        background-image: none;
+        padding: 14px 0;
+        border-right: none;
+        border-left: none;
+        margin-bottom: 10px;
+    }
+
+    .filters--open-mobile .design-filters__show-btn span {
+        margin-left: 0;
+    }
+
+    .filters--open-mobile .design-filters__color-btn {
+        width: 44px;
+        height: 44px;
+    }
+
+    .filters--open-mobile .design-filters__clear {
+        margin-bottom: 40px;
+    }
+
+    .filters--open-mobile .design-filters__mobile-btns {
+        display: flex;
+        justify-content: center;
+        gap: 18px;
+        font-size: 14px;
+        margin-bottom: 40px;
+    }
+
+    .design-filters__clear-btn {
+        padding: 14px 0;
+        border: none;
+        border-radius: 4px;
+        background-color: var(--color-bg-first);
+        flex-grow: 1;
+        cursor: pointer;
+    }
+
+    .design-filters__apply-btn {
+        padding: 14px 0;
+        border: none;
+        border-radius: 4px;
+        background-color: var(--color-bg-first);
+        flex-grow: 1;
+        cursor: pointer;
+    }
+
+    .design-filters__clear-btn:hover,
+    .design-filters__apply-btn:hover {
+        background-color: var(--color-main);
+    }
+}
+
+// JS функционал
+
+.popular,
+.social-media,
+.marketing,
+.advertising,
+.branding,
+.office,
+.more {
+    display: none;
+}
+
+.popular--opened,
+.social-media--opened,
+.marketing--opened,
+.advertising--opened,
+.branding--opened,
+.office--opened,
+.more--opened {
+    display: flex;
 }
