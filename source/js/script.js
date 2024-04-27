@@ -104,3 +104,17 @@ if (document.documentElement.clientWidth <= 1024) {
         filtersWrapper.classList.remove("filters--open");
     });
 }
+
+// Открытие карточки дизайна
+
+const designCard = document.querySelector(".design-content__design-card-wrapper");
+const openDesignCard = document.querySelector(".card-template--open");
+const closeDesignCard = document.querySelector(".design-card__close-btn");
+
+openDesignCard.addEventListener("click", function () {
+    designCard.classList.add("design-content__design-card-wrapper--open");
+});
+
+closeDesignCard.addEventListener("click", function () {
+    designCard.classList.remove("design-content__design-card-wrapper--open");
+});
