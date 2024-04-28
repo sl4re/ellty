@@ -70,6 +70,7 @@
         background-repeat: no-repeat;
         background-position: left center;
         background-size: 18px 18px;
+        transition: transform 0.2s linear 0s;
 
         &:link,
         &:visited {
@@ -94,7 +95,14 @@
 
         @media (max-width: 1024px) {
             & span {
-                display: none;
+                position: absolute;
+                width: 1px;
+                height: 1px;
+                margin: -1px;
+                padding: 0;
+                border: 0;
+                clip: rect(0 0 0 0);
+                overflow: hidden;
             }
         }
     }
@@ -139,6 +147,7 @@
     &__menu-link:visited {
         display: inline-block;
         color: var(--color-text-secondary);
+        transition: transform 0.1s linear 0s;
     }
 
     &__menu-link:hover {

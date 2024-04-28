@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ellty</title>
+    <title>ellty | Home</title>
     <link rel="stylesheet" href="css/style.min.css">
 </head>
 
@@ -39,10 +39,11 @@
             <button class="btn btn--secondary user-nav__signUp" type="button">Sign up</button>
         </div>
 
-        <button class="page-header__burger-btn ">
+        <button class="page-header__burger-btn" type="button">
             <span></span>
             <span></span>
             <span></span>
+            <span class="visually-hidden">Open menu</span>
         </button>
     </header>
 
@@ -197,13 +198,13 @@
 
 
                 <button class="arrow-btn preview__arrow-btn preview__arrow-btn--prev" type="button">
-                    <span class="visually-hidden">Назад</span>
+                    <span class="visually-hidden">Previous</span>
                     <svg class="arrow-icon" width="20" height="20">
                         <use xlink:href="img/sprites/sprite.svg#arrow-left"></use>
                     </svg>
                 </button>
                 <button class="arrow-btn preview__arrow-btn preview__arrow-btn--next" type="button">
-                    <span class="visually-hidden">Вперед</span>
+                    <span class="visually-hidden">Next</span>
                     <svg class="arrow-icon" width="20" height="20">
                         <use xlink:href="img/sprites/sprite.svg#arrow-right"></use>
                     </svg></button>
@@ -379,13 +380,13 @@
                 </div>
 
                 <button class="arrow-btn templates__arrow-btn--prev" type="button">
-                    <span class="visually-hidden">Назад</span>
+                    <span class="visually-hidden">Back</span>
                     <svg class="arrow-icon" width="20" height="20">
                         <use xlink:href="img/sprites/sprite.svg#arrow-left"></use>
                     </svg>
                 </button>
                 <button class="arrow-btn templates__arrow-btn--next" type="button">
-                    <span class="visually-hidden">Вперед</span>
+                    <span class="visually-hidden">Next</span>
                     <svg class="arrow-icon" width="20" height="20">
                         <use xlink:href="img/sprites/sprite.svg#arrow-right"></use>
                     </svg></button>
@@ -579,14 +580,14 @@
             <h2 class="modal__title">Log in</h2>
             <form class="modal__form" action="#">
                 <label class="modal__label" for="email">Email</label>
-                <input class="modal__input" id="email" type="email" placeholder="Enter your email">
+                <input class="modal__input" id="email" type="email" placeholder="Enter your email" name="email">
 
                 <label class="modal__label" for="password">Password</label>
-                <input class="modal__input" id="password" type="email" placeholder="**********">
+                <input class="modal__input" id="password" type="email" placeholder="**********" name="password">
 
                 <div class="modal__inner-wrapper">
                     <label class="modal__checkbox-label" for="remember">
-                        <input class="modal__checkbox" id="remember" type="checkbox">Remember me
+                        <input class="modal__checkbox" id="remember" type="checkbox" name="remember">Remember me
                         <svg class="modal__checkbox-icon" width="14" height="14">
                             <use xlink:href="img/sprites/sprite.svg#check"></use>
                         </svg>
@@ -619,13 +620,13 @@
             <h2 class="modal__title">Sign up</h2>
             <form class="modal__form" action="#">
                 <label class="modal__label" for="email">Name</label>
-                <input class="modal__input" id="email" type="email" placeholder="Enter your name">
+                <input class="modal__input" id="email" type="email" placeholder="Enter your name" name="name">
 
                 <label class="modal__label" for="email">Email</label>
-                <input class="modal__input" id="email" type="email" placeholder="Enter your email">
+                <input class="modal__input" id="email" type="email" placeholder="Enter your email" name="email">
 
                 <label class="modal__label" for="password">Password</label>
-                <input class="modal__input" id="password" type="email" placeholder="**********">
+                <input class="modal__input" id="password" type="email" placeholder="**********" name="password">
 
                 <p class="modal__terms-text">By continuing, you agree to Ellty's <a class="modal__forgot-link"
                         href="#">Terms of Use</a> and

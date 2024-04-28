@@ -50,6 +50,7 @@
         padding: 12px 5px;
         color: var(--color-text-main);
         border-radius: 4px;
+        transition: background-color 0.2s linear 0s;
     }
 
     &__link:hover {

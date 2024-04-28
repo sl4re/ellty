@@ -146,6 +146,7 @@
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
+        transition: all 0.2s linear 0s;
 
         &:hover {
             transform: scale(1.3);

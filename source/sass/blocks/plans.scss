@@ -53,6 +53,7 @@
     &__link:first-child::before {
         content: "Save 30%";
         font-size: 14px;
+        font-weight: 500;
         line-height: 15.6px;
         color: var(--color-text-secondary);
         display: block;

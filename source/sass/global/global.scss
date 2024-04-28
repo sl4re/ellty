@@ -53,6 +53,7 @@ body {
     border-radius: 4px;
     cursor: pointer;
     color: inherit;
+    transition: all 0.2s linear 0s;
 }
 
 // Отключенное состояние кнопки\ссылки
@@ -64,6 +65,7 @@ body {
 .btn--primary {
     padding: 11px 33px;
     background-color: var(--color-main);
+    transition: all 0.1s linear 0s;
 
     &:hover {
         box-shadow: var(--shadow-btn);
@@ -80,6 +82,7 @@ body {
 
 .btn--secondary {
     background-color: var(--color-bg-first);
+    transition: all 0.1s linear 0s;
 
     &:hover {
         background-color: var(--color-main);
@@ -130,6 +133,7 @@ body {
 .arrow-link {
     position: relative;
     display: inline-block;
+    transition: transform 0.1s linear 0s;
 
     & .arrow-icon {
         position: absolute;

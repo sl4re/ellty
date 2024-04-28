@@ -110,6 +110,10 @@
     cursor: pointer;
 }
 
+.design-filters__color-btn:hover {
+    opacity: 0.5;
+}
+
 .design-filters__clear {
     font-size: 14px;
     font-weight: 500;
@@ -118,6 +122,7 @@
     background-color: transparent;
     border: none;
     cursor: pointer;
+    transition: all 0.1s linear 0s;
 
     &:hover {
         font-size: 16px;
