@@ -117,6 +117,11 @@
     color: var(--color-secondary);
     background-color: transparent;
     border: none;
+    cursor: pointer;
+
+    &:hover {
+        font-size: 16px;
+    }
 }
 
 .pallette {

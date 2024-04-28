@@ -67,6 +67,7 @@
     }
 
     &__checkbox-label {
+        font-size: 12px;
         font-weight: 400;
         line-height: 13px;
         color: var(--color-text-secondary);
@@ -109,6 +110,7 @@
 
     &__forgot-link:link,
     &__forgot-link:visited {
+        font-size: 12px;
         font-weight: 400;
         line-height: 13px;
         color: var(--color-secondary);
@@ -153,6 +155,27 @@
         display: block;
         margin-bottom: 10px;
         text-align: center;
+    }
+
+    &__btn span {
+        background-repeat: no-repeat;
+        background-position: left center;
+        background-size: contain;
+    }
+
+    &__btn--google span {
+        background-image: url("../img/google-link.svg");
+        padding-left: 24px;
+    }
+
+    &__btn--facebook span {
+        background-image: url("../img/facebook-link.svg");
+        padding-left: 14px;
+    }
+
+    &__btn--apple span {
+        background-image: url("../img/apple-link.svg");
+        padding-left: 24px;
     }
 
     &__alternative-option {

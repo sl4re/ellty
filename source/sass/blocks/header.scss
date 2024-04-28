@@ -49,10 +49,12 @@
         display: block;
         padding: 12px 5px;
         color: var(--color-text-main);
+        border-radius: 4px;
     }
 
     &__link:hover {
         font-weight: 500;
+        background-color: var(--color-bg-first);
     }
 
     &__link:active {
@@ -67,10 +69,6 @@
 .user-nav {
     @media (max-width: 1024px) {
         margin-right: 44px;
-    }
-
-    @media (max-width: 480px) {
-        // margin-right: 44px;
     }
 }
 
