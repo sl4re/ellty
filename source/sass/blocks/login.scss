@@ -29,7 +29,7 @@
     max-width: 360px;
 
     &__title {
-        font-size: 16px;
+        font-size: 20px;
         font-weight: 500;
         line-height: normal;
         margin-bottom: 20px;
@@ -41,21 +41,21 @@
     }
 
     &__label {
-        font-size: 12px;
+        font-size: 14px;
         font-weight: 500;
         line-height: normal;
-        margin-bottom: 3px;
+        margin-bottom: 8px;
     }
 
     &__input {
-        padding: 12px 26px 12px 10px;
-        border-radius: 4px;
-        border: 1px solid var(--color-border);
-        font-size: 12px;
+        font-size: 14px;
         font-weight: 400;
         line-height: 15.6px;
         color: var(--color-text-secondary);
-        margin-bottom: 10px;
+        padding: 12px 26px 12px 10px;
+        border-radius: 4px;
+        border: 1px solid var(--color-border);
+        margin-bottom: 15px;
     }
 
     &__inner-wrapper {
