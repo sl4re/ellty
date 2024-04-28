@@ -5,19 +5,14 @@
     bottom: 0;
     left: 0;
     width: 100%;
-    // height: 100%;
-    min-height: 100vh;
+    height: 100%;
     background-color: rgba(31, 33, 40, 0.7);
     z-index: 100;
     overflow-y: auto;
     display: none;
     justify-content: flex-start;
     align-items: center;
-    padding: 25% 42px 50px;
-
-    // @media (max-width: 1301px) {
-    //     padding-top: 45%;
-    // }
+    padding: 300px 42px 50px;
 }
 
 .design-content__design-card-wrapper--open {
@@ -39,8 +34,6 @@
     }
 
     @media (max-width: 887px) {
-        // margin-top: 500px;
-        // margin-top: 60%;
         margin-top: 40%;
     }
 
