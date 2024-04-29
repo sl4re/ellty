@@ -1,5 +1,3 @@
-"use strict";
-
 // Навигация в шапке сайта
 const navToggle = document.querySelector(".page-header__burger-btn");
 const navList = document.querySelector(".page-nav__list");
@@ -37,84 +35,35 @@ signupCloseBtn.addEventListener("click", function () {
     modalSignUp.classList.toggle("modal--opened");
 });
 
-// Фильтры на странице Create Design
+// Функция для слайдеров
 
-const showPopular = document.querySelector(".show-popular");
-const showMedia = document.querySelector(".show-media");
-const showMarketing = document.querySelector(".show-marketing");
-const showAdvertising = document.querySelector(".show-advertising");
-const showBranding = document.querySelector(".show-branding");
-const showOffice = document.querySelector(".show-office");
-const showMore = document.querySelector(".show-more");
+const slide = (slider, step, period) => () => {
+    const startTime = Date.now();
+    const startLeft = slider.scrollLeft;
+    const render = () => {
+        const dt = Date.now() - startTime;
+        if (dt < period) {
+            slider.scrollLeft = startLeft + (step * dt) / period;
+            requestAnimationFrame(render);
+        }
+    };
+    requestAnimationFrame(render);
+};
 
-const filtersPopular = document.querySelector(".popular");
-const filtersMedia = document.querySelector(".social-media");
-const filtersMarketing = document.querySelector(".marketing");
-const filtersAdvertising = document.querySelector(".advertising");
-const filtersBranding = document.querySelector(".branding");
-const filtersOffice = document.querySelector(".office");
-const filtersMore = document.querySelector(".more");
+// Preview слайдер
 
-showPopular.addEventListener("click", function () {
-    filtersPopular.classList.toggle("popular--opened");
-});
+const previewSlider = document.querySelector("#preview-slider");
+const previewPrevBtn = document.querySelector("#preview-prev");
+const previewNextBtn = document.querySelector("#preview-next");
 
-showMedia.addEventListener("click", function () {
-    filtersMedia.classList.toggle("social-media--opened");
-});
+previewPrevBtn.addEventListener("click", slide(previewSlider, -300, 300));
+previewNextBtn.addEventListener("click", slide(previewSlider, 300, 300));
 
-showMarketing.addEventListener("click", function () {
-    filtersMarketing.classList.toggle("marketing--opened");
-});
+// Templates слайдер
 
-showAdvertising.addEventListener("click", function () {
-    filtersAdvertising.classList.toggle("advertising--opened");
-});
+const templatesSlider = document.querySelector("#templates-slider");
+const templatesPrevBtn = document.querySelector("#templates-prev");
+const templatesNextBtn = document.querySelector("#templates-next");
 
-showBranding.addEventListener("click", function () {
-    filtersBranding.classList.toggle("branding--opened");
-});
-
-showOffice.addEventListener("click", function () {
-    filtersOffice.classList.toggle("office--opened");
-});
-
-showMore.addEventListener("click", function () {
-    filtersMore.classList.toggle("more--opened");
-});
-
-// Открытие фильтров
-
-const showFilters = document.querySelector(".design-filters__show-btn");
-const filtersWrapper = document.querySelector(".design-filters__inner");
-const filtersMobile = document.querySelector(".design-filters");
-const contentWrapper = document.querySelector(".design-content__inner");
-
-if (document.documentElement.clientWidth > 1024) {
-    showFilters.addEventListener("click", function () {
-        filtersWrapper.classList.toggle("filters--open");
-        contentWrapper.classList.toggle("design-content__inner--filters-closed");
-    });
-}
-
-// Открытие фильтров на мобилке
-if (document.documentElement.clientWidth <= 1024) {
-    showFilters.addEventListener("click", function () {
-        filtersMobile.classList.toggle("filters--open-mobile");
-        filtersWrapper.classList.remove("filters--open");
-    });
-}
-
-// Открытие карточки дизайна
-
-const designCard = document.querySelector(".design-content__design-card-wrapper");
-const openDesignCard = document.querySelector(".card-template--open");
-const closeDesignCard = document.querySelector(".design-card__close-btn");
-
-openDesignCard.addEventListener("click", function () {
-    designCard.classList.add("design-content__design-card-wrapper--open");
-});
-
-closeDesignCard.addEventListener("click", function () {
-    designCard.classList.remove("design-content__design-card-wrapper--open");
-});
+templatesPrevBtn.addEventListener("click", slide(templatesSlider, -300, 300));
+templatesNextBtn.addEventListener("click", slide(templatesSlider, 300, 300));

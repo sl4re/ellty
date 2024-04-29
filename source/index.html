@@ -95,7 +95,7 @@
             </ul>
 
             <div class="preview__slider">
-                <ul class="preview__slider-list">
+                <ul class="preview__slider-list" id="preview-slider">
                     <li class="preview__item">
                         <div class="preview__bg">
                             <picture>
@@ -197,13 +197,13 @@
                 </ul>
 
 
-                <button class="arrow-btn preview__arrow-btn preview__arrow-btn--prev" type="button">
+                <button class="arrow-btn preview__arrow-btn preview__arrow-btn--prev" id="preview-prev" type="button">
                     <span class="visually-hidden">Previous</span>
                     <svg class="arrow-icon" width="20" height="20">
                         <use xlink:href="img/sprites/sprite.svg#arrow-left"></use>
                     </svg>
                 </button>
-                <button class="arrow-btn preview__arrow-btn preview__arrow-btn--next" type="button">
+                <button class="arrow-btn preview__arrow-btn preview__arrow-btn--next" id="preview-next" type="button">
                     <span class="visually-hidden">Next</span>
                     <svg class="arrow-icon" width="20" height="20">
                         <use xlink:href="img/sprites/sprite.svg#arrow-right"></use>
@@ -218,7 +218,7 @@
             <p class="templates__subtitle">Quick and easy to customize. No experience required.</p>
 
             <div class="templates__slider-wrapper">
-                <div class="templates__slider">
+                <div class="templates__slider" id="templates-slider">
                     <ul class="templates__list">
                         <li class="templates__item">
                             <picture>
@@ -379,13 +379,13 @@
                     </ul>
                 </div>
 
-                <button class="arrow-btn templates__arrow-btn--prev" type="button">
+                <button class="arrow-btn templates__arrow-btn--prev" id="templates-prev" type="button">
                     <span class="visually-hidden">Back</span>
                     <svg class="arrow-icon" width="20" height="20">
                         <use xlink:href="img/sprites/sprite.svg#arrow-left"></use>
                     </svg>
                 </button>
-                <button class="arrow-btn templates__arrow-btn--next" type="button">
+                <button class="arrow-btn templates__arrow-btn--next" id="templates-next" type="button">
                     <span class="visually-hidden">Next</span>
                     <svg class="arrow-icon" width="20" height="20">
                         <use xlink:href="img/sprites/sprite.svg#arrow-right"></use>
@@ -647,7 +647,8 @@
         </div>
     </div>
 
-    <script src="js/script.min.js" type="module"></script>
+    <!-- <script src="js/script.min.js" type="module"></script> -->
+    <script src="js/script.js" type="module"></script>
 </body>
 
 </html>

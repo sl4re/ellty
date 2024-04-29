@@ -88,10 +88,9 @@
     overflow-x: auto;
 }
 
-// УБРАТЬ ГОРИЗОНТАЛЬНЫЙ СКОЛЛ
-// .design-tags__list::-webkit-scrollbar {
-//     display: none;
-// }
+.design-tags__list::-webkit-scrollbar {
+    display: none;
+}
 
 .design-tags__item {
     flex-shrink: 0;
@@ -165,6 +164,7 @@
 }
 
 .design-template {
+    text-align: left;
     position: relative;
 }
 
@@ -215,6 +215,11 @@
     font-weight: 500;
     line-height: normal;
     color: var(--color-text-main);
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
     transition: all 0.2s linear 0s;
 }
 

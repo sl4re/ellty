@@ -50,9 +50,9 @@
         overflow-x: auto;
     }
 
-    // &__slider::-webkit-scrollbar {
-    //     display: none;
-    // }
+    &__slider::-webkit-scrollbar {
+        display: none;
+    }
 
     &__list {
         display: flex;

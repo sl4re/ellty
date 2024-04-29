@@ -56,13 +56,12 @@
     &__slider-list {
         display: flex;
         gap: 15px;
-        // overflow: hidden;
         overflow-x: auto;
     }
 
-    // &__slider-list::-webkit-scrollbar {
-    //     display: none;
-    // }
+    &__slider-list::-webkit-scrollbar {
+        display: none;
+    }
 
     &__item {
         width: 202px;

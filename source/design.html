@@ -169,7 +169,7 @@
 
 
                 <div class="design-tags">
-                    <ul class="design-tags__list">
+                    <ul class="design-tags__list" id="tags-slider">
                         <li class="design-tags__item">
                             <button class="design-tags__tag" type="button">christmas</button>
                         </li>
@@ -227,13 +227,15 @@
                     </ul>
 
 
-                    <button class="arrow-btn design-tags__arrow-btn design-tags__arrow-btn--prev" type="button">
+                    <button class="arrow-btn design-tags__arrow-btn design-tags__arrow-btn--prev" id="tags-prev"
+                        type="button">
                         <span class="visually-hidden">Back</span>
                         <svg class="arrow-icon" width="20" height="20">
                             <use xlink:href="img/sprites/sprite.svg#arrow-left"></use>
                         </svg>
                     </button>
-                    <button class="arrow-btn design-tags__arrow-btn design-tags__arrow-btn--next" type="button">
+                    <button class="arrow-btn design-tags__arrow-btn design-tags__arrow-btn--next" id="tags-next"
+                        type="button">
                         <span class="visually-hidden">Next</span>
                         <svg class="arrow-icon" width="20" height="20">
                             <use xlink:href="img/sprites/sprite.svg#arrow-right"></use>
@@ -256,7 +258,7 @@
                 </div>
 
                 <ul class="design-templates">
-                    <li class="design-template">
+                    <li class="design-template design-template__blank">
                         <a class="design-template__link card-template--open" href="#">
                             <div class="design-template__blank-img" width="212" height="216"></div>
                             <h3 class="design-template__title">Create a blank</h3>
@@ -966,7 +968,7 @@
                     </div>
 
                     <div class="design-tags design-card__tags">
-                        <ul class="design-tags__list">
+                        <ul class="design-tags__list" id="tags-slider--modal">
                             <li class="design-tags__item">
                                 <button class="design-tags__tag" type="button">new year</button>
                             </li>
@@ -1024,13 +1026,15 @@
                         </ul>
 
 
-                        <button class="arrow-btn design-tags__arrow-btn design-tags__arrow-btn--prev" type="button">
+                        <button class="arrow-btn design-tags__arrow-btn design-tags__arrow-btn--prev"
+                            id="tags-prev--modal" type="button">
                             <span class="visually-hidden">Back</span>
                             <svg class="arrow-icon" width="20" height="20">
                                 <use xlink:href="img/sprites/sprite.svg#arrow-left"></use>
                             </svg>
                         </button>
-                        <button class="arrow-btn design-tags__arrow-btn design-tags__arrow-btn--next" type="button">
+                        <button class="arrow-btn design-tags__arrow-btn design-tags__arrow-btn--next"
+                            id="tags-next--modal" type="button">
                             <span class="visually-hidden">Next</span>
                             <svg class="arrow-icon" width="20" height="20">
                                 <use xlink:href="img/sprites/sprite.svg#arrow-right"></use>
@@ -1040,8 +1044,8 @@
                     <h3 class="design-card__subtitle">Create your own or make like this:</h3>
 
                     <div class="design-card__templates-wrapper">
-                        <ul class="design-card__templates">
-                            <li class="design-template">
+                        <ul class="design-card__templates" id="templates-slider--modal-top">
+                            <li class="design-template design-template__blank">
                                 <a class="design-template__link" href="#">
                                     <div class="design-template__blank-img" width="170" height="170"></div>
                                     <h3 class="design-template__title">Create a blank</h3>
@@ -1132,7 +1136,9 @@
                                     <h3 class="design-template__title">Your feedback is the best reward</h3>
                                 </a>
                             </li>
+                        </ul>
 
+                        <ul class="design-card__templates" id="templates-slider--modal-bottom">
                             <li class="design-template">
                                 <button class="design-template__favourite" type="button">
                                     <span class="visually-hidden">Add to favourite</span>
@@ -1236,21 +1242,23 @@
                             </li>
                         </ul>
 
-                        <button class="arrow-btn design-tags__arrow-btn design-tags__arrow-btn--prev" type="button">
+                        <button class="arrow-btn design-tags__arrow-btn design-tags__arrow-btn--prev"
+                            id="templates-prev--modal" type="button">
                             <span class="visually-hidden">Back</span>
                             <svg class="arrow-icon" width="20" height="20">
                                 <use xlink:href="img/sprites/sprite.svg#arrow-left"></use>
                             </svg>
                         </button>
 
-                        <button class="arrow-btn design-tags__arrow-btn design-tags__arrow-btn--next" type="button">
+                        <button class="arrow-btn design-tags__arrow-btn design-tags__arrow-btn--next"
+                            id="templates-next--modal" type="button">
                             <span class="visually-hidden">Next</span>
                             <svg class="arrow-icon" width="20" height="20">
                                 <use xlink:href="img/sprites/sprite.svg#arrow-right"></use>
                             </svg></button>
                     </div>
                     <button class="design-card__close-btn">
-                        <span class="visually-hidden">Close card design</span>
+                        <span class="visually-hidden">Close modal</span>
                     </button>
                 </div>
 
@@ -1462,7 +1470,8 @@
         </div>
     </div>
 
-    <script src="js/script.min.js" type="module"></script>
+    <!-- <script src="js/script.min.js" type="module"></script> -->
+    <script src="js/design.js" type="module"></script>
 </body>
 
 </html>
