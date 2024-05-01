@@ -1,3 +1,25 @@
+.design-breadcrumbs {
+    grid-area: breadcrumbs;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 30px;
+    z-index: 1;
+
+    @media (max-width: 768px) {
+        margin-bottom: 24px;
+    }
+}
+
+.breadcrumbs__templates {
+    font-size: 14px;
+
+    @media (max-width: 480px) {
+        display: none;
+    }
+}
+
 .breadcrumbs {
     max-width: 1920px;
     margin: 0 auto;

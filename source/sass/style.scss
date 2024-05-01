@@ -1,44 +1,40 @@
 @import "global/fonts.scss";
-
 @import "global/variables.scss";
-
 @import "global/reset.scss";
 
+// Общие стили
 @import "global/global.scss";
 
-// ГЛАВНАЯ СТРАНИЦА
+// Общие блоки
 @import "blocks/header.scss";
-
-@import "blocks/intro.scss";
-
-@import "blocks/preview.scss";
-
-@import "blocks/templates.scss";
-
-@import "blocks/features.scss";
-
-@import "blocks/cta.scss";
-
 @import "blocks/footer.scss";
 
 @import "blocks/login.scss";
-
 @import "blocks/sign-up.scss";
 
-@import "blocks/policy.scss";
-
 @import "blocks/breadcrumbs.scss";
-
-@import "blocks/plans.scss";
-
 @import "blocks/accordeon.scss";
 
+// Home page
+@import "blocks/intro.scss";
+@import "blocks/preview.scss";
+@import "blocks/templates.scss";
+@import "blocks/features.scss";
+@import "blocks/cta.scss";
+
+// Design page
+@import "blocks/design-intro.scss";
+@import "blocks/design-content.scss";
+@import "blocks/design-filters.scss";
+@import "blocks/design-card.scss";
+@import "blocks/search.scss";
+@import "blocks/tags.scss";
+
+// Contact page
 @import "blocks/contact.scss";
 
-@import "blocks/design-intro.scss";
+// Plans page
+@import "blocks/plans.scss";
 
-@import "blocks/design-content.scss";
-
-@import "blocks/design-filters.scss";
-
-@import "blocks/design-card.scss";
+// Policy page
+@import "blocks/policy.scss";
