@@ -1,0 +1,1 @@
+const slide=(e,t,o)=>()=>{const n=Date.now(),s=e.scrollLeft,r=()=>{const a=Date.now()-n;a<o&&(e.scrollLeft=s+t*a/o,requestAnimationFrame(r))};requestAnimationFrame(r)};export{slide};
