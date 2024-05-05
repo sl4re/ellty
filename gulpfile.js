@@ -42,8 +42,8 @@ export const html = () => {
 // Scripts
 
 export const scripts = () => {
-    // return gulp.src("source/js/script.js").pipe(terser()).pipe(rename("script.min.js")).pipe(gulp.dest("build/js")).pipe(sync.stream());
-    return gulp.src("source/js/*.js").pipe(terser()).pipe(gulp.dest("build/js")).pipe(sync.stream());
+    return gulp.src("source/js/script.js").pipe(terser()).pipe(rename("script.min.js")).pipe(gulp.dest("build/js")).pipe(sync.stream());
+    // return gulp.src("source/js/*.js").pipe(terser()).pipe(gulp.dest("build/js")).pipe(sync.stream());
 };
 
 // Images
@@ -119,8 +119,8 @@ const server = (done) => {
 
 const watcher = () => {
     gulp.watch("source/sass/**/*.scss", gulp.series(styles));
-    // gulp.watch("source/js/script.js", gulp.series(scripts));
-    gulp.watch("source/js/*.js", gulp.series(scripts));
+    gulp.watch("source/js/script.js", gulp.series(scripts));
+    // gulp.watch("source/js/*.js", gulp.series(scripts));
     // gulp.watch('source/*.html').on('change', sync.reload); // заменил эту строку из обновления от Кекса в разделе препроцессоров на нижнюю, так как при каждом изменении html-файлов нужно запускать теперь еше функцию минификации html.
     gulp.watch("source/*.html", gulp.series(html, reload));
 };
