@@ -1,5 +1,10 @@
-# build/
-node_modules/
-package-lock.json
-source/css/*
+# Editor directories and files
+.vscode/*
+.idea
+.github
 
+# Build
+node_modules
+
+# Files
+source/css/*

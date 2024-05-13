@@ -1,6 +1,6 @@
-import { slide } from "./functions.js";
+import slide from "./functions.js";
 
-export default function createDesign() {
+function createDesign() {
     // Фильтры на странице Create Design
     const showPopular = document.querySelector(".show-popular");
     const showMedia = document.querySelector(".show-media");
@@ -112,3 +112,5 @@ export default function createDesign() {
     templatesNextBtnModal.addEventListener("click", slide(templatesSliderModalTop, 300, 300));
     templatesNextBtnModal.addEventListener("click", slide(templatesSliderModalBottom, 300, 300));
 }
+
+export default createDesign

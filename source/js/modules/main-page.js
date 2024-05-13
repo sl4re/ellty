@@ -1,6 +1,6 @@
-import { slide } from "./functions.js";
+import slide from "./functions.js";
 
-export default function mainPage() {
+function mainPage() {
     // Preview слайдер
 
     const previewSlider = document.querySelector("#preview-slider");
@@ -19,3 +19,5 @@ export default function mainPage() {
     templatesPrevBtn.addEventListener("click", slide(templatesSlider, -300, 300));
     templatesNextBtn.addEventListener("click", slide(templatesSlider, 300, 300));
 }
+
+export default mainPage
