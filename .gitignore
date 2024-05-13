@@ -1,7 +1,6 @@
 # Editor directories and files
 .vscode/*
 .idea
-.github
 
 # Build
 node_modules
