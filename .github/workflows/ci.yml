@@ -15,7 +15,6 @@ jobs:
         run: |
           yarn
           yarn build
-
   deploy:
     needs: build
 
